@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyTyper.Core", "MonkeyTyper.Core\MonkeyTyper.Core.csproj", "{F989D428-56B3-46D4-A844-0F824FE95AED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F989D428-56B3-46D4-A844-0F824FE95AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F989D428-56B3-46D4-A844-0F824FE95AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F989D428-56B3-46D4-A844-0F824FE95AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F989D428-56B3-46D4-A844-0F824FE95AED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10CC05B1-89E2-4032-AE8B-46E07AB9C254}
+	EndGlobalSection
+EndGlobal
