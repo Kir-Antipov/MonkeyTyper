@@ -57,7 +57,7 @@ namespace MonkeyTyper.Core.Extensions
             return storage.Load(Directory.EnumerateFiles(path, searchPattern, options));
         }
 
-#if !NETSTANDARD2_0
+#if NETSTANDARD2_1
         /// <param name="options">Enumeration options.</param>
         /// <inheritdoc cref="Load(IPluginManager, string, string, SearchOption)"/>
         public static IEnumerable<ServiceDescriptor> Load(this IPluginManager storage, string path, string searchPattern, EnumerationOptions options)
