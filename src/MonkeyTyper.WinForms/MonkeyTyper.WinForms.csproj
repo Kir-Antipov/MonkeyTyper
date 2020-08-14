@@ -4,6 +4,7 @@
     <TargetFrameworks>net461</TargetFrameworks>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>..\..\media\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
