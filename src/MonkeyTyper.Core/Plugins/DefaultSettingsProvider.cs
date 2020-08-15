@@ -66,8 +66,8 @@ namespace MonkeyTyper.Core.Plugins
         /// <inheritdoc cref="ISettingsProvider.Store(string)"/>
         public void Store(string filename)
         {
-            Dictionary<string, Dictionary<string, object?>> data = TypeSettings.Values
-                .ToDictionary(x => x.Guid.ToString(), x => new Dictionary<string, object?>(x));
+            IDictionary<string, IDictionary<string, object?>> data = TypeSettings.Values
+                .ToDictionary(x => x.Guid.ToString(), x => (IDictionary<string, object?>)x);
 
             string json = JsonConvert.SerializeObject(data);
             File.WriteAllText(filename, json);
@@ -101,7 +101,7 @@ namespace MonkeyTyper.Core.Plugins
                     if (!GuidSettings.TryGetValue(guid, out ISettings? settings))
                         continue;
 
-                    JsonConvert.PopulateObject(entry.Value.ToString(), settings);
+                    JsonConvert.PopulateObject(entry.Value.ToString(), settings, new JsonSerializerSettings { ContractResolver = new SettingsContractResolver() });
                 }
             }
             catch (Exception ex)
