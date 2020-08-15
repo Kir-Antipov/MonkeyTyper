@@ -17,5 +17,12 @@ namespace MonkeyTyper.Core.Plugins
         /// Unique and permanent identifier of this type.
         /// </summary>
         Guid Guid { get; }
+
+        /// <summary>
+        /// Gets the display name for the property with the specified name.
+        /// </summary>
+        /// <param name="propertyName">Property name.</param>
+        /// <returns>Display name of the property.</returns>
+        string GetDisplayName(string propertyName);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
@@ -64,6 +65,15 @@ namespace MonkeyTyper.Core.Plugins
         #endregion
 
         #region Functions
+        /// <inheritdoc/>
+        public string GetDisplayName(string propertyName)
+        {
+            if (Properties.TryGetValue(propertyName, out PropertyInfo property))
+                return property.GetCustomAttribute<DisplayNameAttribute>()?.DisplayName ?? property.Name;
+
+            throw new KeyNotFoundException();
+        }
+
         /// <inheritdoc cref="IDictionary{string, object}.this[string]"/>
         public object? this[string key]
         {
