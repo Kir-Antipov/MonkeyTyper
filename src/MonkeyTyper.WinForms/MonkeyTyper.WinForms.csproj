@@ -3,9 +3,29 @@
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
     <OutputType>WinExe</OutputType>
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>..\..\media\icon.ico</ApplicationIcon>
+    <Authors>Kir_Antipov</Authors>
+    <Copyright>Copyright (c) 2020, Kir_Antipov</Copyright>
+    <Product>MonkeyTyper</Product>
+    <Version>0.0.1</Version>
+    <Description>MonkeyTyper is an extensible application that was created for sending bulk emails.</Description>
+    <PackageProjectUrl>https://github.com/Kir-Antipov/MonkeyTyper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Kir-Antipov/MonkeyTyper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>email email-sender extensible bulk bulk-operation windows</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.AssemblyProjectUrl">
+      <_Parameter1>https://github.com/Kir-Antipov/MonkeyTyper</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.AssemblyHelpUrlAttribute">
+      <_Parameter1>https://github.com/Kir-Antipov/MonkeyTyper/issues/new/choose</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.7" />
