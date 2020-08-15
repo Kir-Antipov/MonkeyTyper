@@ -36,7 +36,7 @@ namespace MonkeyTyper.Core.Plugins
         /// <summary>
         /// Service's factory.
         /// </summary>
-        public Func<object>? ImplementationFactory { get; }
+        public Func<IServiceProvider, object>? ImplementationFactory { get; }
         #endregion
 
         #region Init
@@ -48,7 +48,7 @@ namespace MonkeyTyper.Core.Plugins
         /// <param name="lifetime">The <see cref="ServiceLifetime"/> of the service.</param>
         /// <param name="settingsType">The <see cref="Type"/> of service's <see cref="ISettings"/>.</param>
         /// <param name="implementationFactory">Service's factory.</param>
-        public ServiceDescriptor(Type serviceType, Type implementationType, ServiceLifetime lifetime, Type? settingsType = null, Func<object>? implementationFactory = null)
+        public ServiceDescriptor(Type serviceType, Type implementationType, ServiceLifetime lifetime, Type? settingsType = null, Func<IServiceProvider, object>? implementationFactory = null)
         {
             ServiceType = serviceType ?? throw new ArgumentNullException(nameof(serviceType));
             ImplementationType = implementationType ?? throw new ArgumentNullException(nameof(implementationType));
@@ -58,7 +58,7 @@ namespace MonkeyTyper.Core.Plugins
         }
 
         /// <inheritdoc cref="ServiceDescriptor(Type, Type, ServiceLifetime, Type, Func{object})"/>
-        public ServiceDescriptor(Type implementationType, ServiceLifetime lifetime, Type? settingsType = null, Func<object>? implementationFactory = null) : this(implementationType, implementationType, lifetime, settingsType, implementationFactory) { }
+        public ServiceDescriptor(Type implementationType, ServiceLifetime lifetime, Type? settingsType = null, Func<IServiceProvider, object>? implementationFactory = null) : this(implementationType, implementationType, lifetime, settingsType, implementationFactory) { }
 
         /// <summary>
         /// Initialize a new instance of the <see cref="ServiceDescriptor"/> class.
