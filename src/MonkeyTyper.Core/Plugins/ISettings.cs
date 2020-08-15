@@ -23,6 +23,9 @@ namespace MonkeyTyper.Core.Plugins
         /// </summary>
         /// <param name="propertyName">Property name.</param>
         /// <returns>Display name of the property.</returns>
+        /// <exception cref="KeyNotFoundException">
+        /// There's no property with such name.
+        /// </exception>
         string GetDisplayName(string propertyName);
     }
 }
