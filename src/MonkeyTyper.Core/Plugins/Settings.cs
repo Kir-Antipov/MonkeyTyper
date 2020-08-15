@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -75,8 +76,8 @@ namespace MonkeyTyper.Core.Plugins
         {
             _ = key ?? throw new ArgumentNullException(nameof(key));
 
-            if (Properties.ContainsKey(key))
-                Properties[key].SetValue(this, value);
+            if (Properties.TryGetValue(key, out PropertyInfo? property))
+                property.SetValue(this, ChangeType(value, property.PropertyType));
             else
                 throw new NotSupportedException();
         }
@@ -136,6 +137,34 @@ namespace MonkeyTyper.Core.Plugins
         /// <inheritdoc cref="IEnumerable{KeyValuePair{string, object}}.GetEnumerator"/>
         public IEnumerator<KeyValuePair<string, object?>> GetEnumerator() =>
             Properties.Select(x => new KeyValuePair<string, object?>(x.Key, x.Value.GetValue(this))).GetEnumerator();
+
+        /// <inheritdoc cref="Convert.ChangeType(object, Type)"/>
+        private static object? ChangeType(object? value, Type conversionType)
+        {
+            if (value is null)
+                return conversionType.IsValueType ? 
+                    conversionType.GetConstructor(Type.EmptyTypes).Invoke(null) :
+                    null;
+
+            Type type = value.GetType();
+            if (conversionType.IsAssignableFrom(type))
+                return value;
+
+            Type? underlyingType = Nullable.GetUnderlyingType(conversionType);
+            object? converted = null;
+            if (type == typeof(string) && (underlyingType ?? conversionType).GetMethod("Parse", new[] { typeof(string), typeof(IFormatProvider) }) is { IsStatic: true } parser)
+                try
+                {
+                    converted = parser.Invoke(null, new[] { value, CultureInfo.InvariantCulture });
+                }
+                catch { }
+
+            converted ??= Convert.ChangeType(value, underlyingType ?? conversionType);
+            if (underlyingType is { })
+                converted = conversionType.GetConstructors()[0].Invoke(new[] { converted });
+
+            return converted;
+        }
         #endregion
     }
 }
