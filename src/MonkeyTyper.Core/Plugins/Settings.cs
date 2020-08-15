@@ -143,7 +143,7 @@ namespace MonkeyTyper.Core.Plugins
         {
             if (value is null)
                 return conversionType.IsValueType ? 
-                    conversionType.GetConstructor(Type.EmptyTypes).Invoke(null) :
+                    Activator.CreateInstance(conversionType) :
                     null;
 
             Type type = value.GetType();
