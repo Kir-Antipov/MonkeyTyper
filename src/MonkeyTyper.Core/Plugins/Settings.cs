@@ -53,8 +53,12 @@ namespace MonkeyTyper.Core.Plugins
         public Settings()
         {
             Type thisType = GetType();
-            DisplayName = NameExtractor.Replace(thisType.Name, x => string.Empty);
+
+            DisplayName = thisType.GetCustomAttribute<DisplayNameAttribute>()?.DisplayName ??
+                NameExtractor.Replace(thisType.Name, x => string.Empty);
+
             Guid = thisType.GUID;
+
             Properties = thisType
                 .GetProperties()
                 .Where(x => x.CanRead && x.CanWrite && x.GetIndexParameters().Length == 0)
@@ -162,14 +166,18 @@ namespace MonkeyTyper.Core.Plugins
 
             Type? underlyingType = Nullable.GetUnderlyingType(conversionType);
             object? converted = null;
-            if (type == typeof(string) && (underlyingType ?? conversionType).GetMethod("Parse", new[] { typeof(string), typeof(IFormatProvider) }) is { IsStatic: true } parser)
-                try
-                {
-                    converted = parser.Invoke(null, new[] { value, CultureInfo.InvariantCulture });
-                }
-                catch { }
+            try
+            {
+                converted = Convert.ChangeType(value, underlyingType ?? conversionType);
+            }
+            catch { }
 
-            converted ??= Convert.ChangeType(value, underlyingType ?? conversionType);
+            if (converted is null && type == typeof(string) && (underlyingType ?? conversionType).GetMethod("Parse", new[] { typeof(string), typeof(IFormatProvider) }) is { IsStatic: true } parser)
+                converted = parser.Invoke(null, new[] { value, CultureInfo.InvariantCulture });
+
+            if (converted is null)
+                throw new InvalidCastException();
+
             if (underlyingType is { })
                 converted = conversionType.GetConstructors()[0].Invoke(new[] { converted });
 
