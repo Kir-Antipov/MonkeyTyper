@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeyTyper.Core", "src\Mon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeyTyper.WinForms", "src\MonkeyTyper.WinForms\MonkeyTyper.WinForms.csproj", "{70EE5646-BE5C-4589-9071-FC5A5FF42B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyTyper.Plugins.DataReaders.DSV", "MonkeyTyper.Plugins.DataReaders.DSV\MonkeyTyper.Plugins.DataReaders.DSV.csproj", "{39999D6F-926C-4EAD-84CE-07E167EB00B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyTyper.Plugins.DataReaders.DSV", "src\MonkeyTyper.Plugins.DataReaders.DSV\MonkeyTyper.Plugins.DataReaders.DSV.csproj", "{39999D6F-926C-4EAD-84CE-07E167EB00B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
