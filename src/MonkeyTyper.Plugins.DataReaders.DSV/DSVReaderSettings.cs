@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MonkeyTyper.Core.Plugins;
+using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
@@ -9,7 +10,7 @@ namespace MonkeyTyper.Plugins.DataReaders.DSV
     /// </summary>
     [Guid("4DD21A83-790D-46D1-B484-B230CF4AECCC")]
     [DisplayName("DSV parser settings")]
-    public sealed class DSVReaderSettings
+    public sealed class DSVReaderSettings : Settings
     {
         /// <summary>
         /// Column separators.
