@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeyTyper.Core", "src\MonkeyTyper.Core\MonkeyTyper.Core.csproj", "{F989D428-56B3-46D4-A844-0F824FE95AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyTyper.WinForms", "src\MonkeyTyper.WinForms\MonkeyTyper.WinForms.csproj", "{70EE5646-BE5C-4589-9071-FC5A5FF42B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeyTyper.WinForms", "src\MonkeyTyper.WinForms\MonkeyTyper.WinForms.csproj", "{70EE5646-BE5C-4589-9071-FC5A5FF42B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyTyper.Plugins.DataReaders.DSV", "MonkeyTyper.Plugins.DataReaders.DSV\MonkeyTyper.Plugins.DataReaders.DSV.csproj", "{39999D6F-926C-4EAD-84CE-07E167EB00B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{70EE5646-BE5C-4589-9071-FC5A5FF42B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70EE5646-BE5C-4589-9071-FC5A5FF42B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70EE5646-BE5C-4589-9071-FC5A5FF42B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39999D6F-926C-4EAD-84CE-07E167EB00B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39999D6F-926C-4EAD-84CE-07E167EB00B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39999D6F-926C-4EAD-84CE-07E167EB00B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39999D6F-926C-4EAD-84CE-07E167EB00B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
