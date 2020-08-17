@@ -28,7 +28,7 @@ namespace MonkeyTyper.Core.Data
         /// <summary>
         /// Gets the names of all properties in the current record.
         /// </summary>
-        string[] PropertyNames { get; }
+        IReadOnlyList<string> PropertyNames { get; }
 
         /// <summary>
         /// Gets the number of property in the current record.

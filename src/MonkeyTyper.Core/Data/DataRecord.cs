@@ -17,35 +17,35 @@ namespace MonkeyTyper.Core.Data
         /// </summary>
         public static readonly DataRecord Empty = new EmptyDataRecord();
 
-        /// <inheritdoc cref="IDataRecord.this[string]"/>
+        /// <inheritdoc/>
         public abstract object? this[string name] { get; }
 
-        /// <inheritdoc cref="IDataRecord.this[int]"/>
+        /// <inheritdoc/>
         public abstract object? this[int i] { get; }
 
-        /// <inheritdoc cref="IDataRecord.PropertyNames"/>
-        public abstract string[] PropertyNames { get; }
+        /// <inheritdoc/>
+        public abstract IReadOnlyList<string> PropertyNames { get; }
 
-        /// <inheritdoc cref="IDataRecord.PropertyCount"/>
+        /// <inheritdoc/>
         public abstract int PropertyCount { get; }
 
-        /// <inheritdoc cref="IDataRecord.GetFieldType(string)"/>
+        /// <inheritdoc/>
         public virtual Type GetFieldType(string name) => this[name]?.GetType() ?? typeof(object);
 
 
-        /// <inheritdoc cref="IDataRecord.GetBoolean(string)"/>
+        /// <inheritdoc/>
         public virtual bool GetBoolean(string name) => GetValue<bool>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetByte(string)"/>
+        /// <inheritdoc/>
         public virtual byte GetByte(string name) => GetValue<byte>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetBytes(string)"/>
+        /// <inheritdoc/>
         public virtual byte[] GetBytes(string name) => GetString(name) is { } str ? Encoding.UTF8.GetBytes(str) : Array.Empty<byte>();
 
-        /// <inheritdoc cref="IDataRecord.GetChar(string)"/>
+        /// <inheritdoc/>
         public virtual char GetChar(string name) => GetValue<char>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetData(string)"/>
+        /// <inheritdoc/>
         public virtual IDataReader? GetData(string name) => this[name] switch
         {
             IDataReader reader => reader,
@@ -53,19 +53,19 @@ namespace MonkeyTyper.Core.Data
             _ => throw new InvalidCastException()
         };
 
-        /// <inheritdoc cref="IDataRecord.GetDateTime(string)"/>
+        /// <inheritdoc/>
         public virtual DateTime GetDateTime(string name) => GetValue<DateTime>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetDecimal(string)"/>
+        /// <inheritdoc/>
         public virtual decimal GetDecimal(string name) => GetValue<decimal>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetDouble(string)"/>
+        /// <inheritdoc/>
         public virtual double GetDouble(string name) => GetValue<double>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetFloat(string)"/>
+        /// <inheritdoc/>
         public virtual float GetFloat(string name) => GetValue<float>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetGuid(string)"/>
+        /// <inheritdoc/>
         public virtual Guid GetGuid(string name) => this[name] switch
         {
             Guid guid => guid,
@@ -73,16 +73,16 @@ namespace MonkeyTyper.Core.Data
             _ => default
         };
 
-        /// <inheritdoc cref="IDataRecord.GetInt16(string)"/>
+        /// <inheritdoc/>
         public virtual short GetInt16(string name) => GetValue<short>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetInt32(string)"/>
+        /// <inheritdoc/>
         public virtual int GetInt32(string name) => GetValue<int>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetInt64(string)"/>
+        /// <inheritdoc/>
         public virtual long GetInt64(string name) => GetValue<long>(name);
 
-        /// <inheritdoc cref="IDataRecord.GetString(string)"/>
+        /// <inheritdoc/>
         public virtual string? GetString(string name) => this[name] switch
         {
             string str => str,
@@ -90,17 +90,17 @@ namespace MonkeyTyper.Core.Data
             _ => default
         };
 
-        /// <inheritdoc cref="IDataRecord.GetValue(string)"/>
+        /// <inheritdoc/>
         public virtual object? GetValue(string name) => this[name];
 
-        /// <inheritdoc cref="IEnumerable.GetEnumerator()"/>
+        /// <inheritdoc/>
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-        /// <inheritdoc cref="IEnumerable{object}.GetEnumerator()"/>
+        /// <inheritdoc/>
         public virtual IEnumerator<object?> GetEnumerator()
         {
-            string[] names = PropertyNames;
-            for (int i = 0; i < names.Length; ++i)
+            IReadOnlyList<string> names = PropertyNames;
+            for (int i = 0; i < names.Count; ++i)
                 yield return this[names[i]];
         }
 
@@ -111,5 +111,63 @@ namespace MonkeyTyper.Core.Data
             { } value => (T)Convert.ChangeType(value, typeof(T), CultureInfo.InvariantCulture),
             _ => default
         };
+
+        #region Init
+        /// <summary>
+        /// Creates a <see cref="DataRecord"/> from key-value pairs.
+        /// </summary>
+        /// <param name="values">
+        /// The values ​​to be accessed through the <see cref="DataRecord"/> interface.
+        /// </param>
+        /// <param name="comparer">
+        /// The <see cref="IEqualityComparer{T}"/> implementation to use when
+        /// comparing keys.
+        /// </param>
+        /// <returns>
+        /// <see cref="DataRecord"/> providing access to the specified data.
+        /// </returns>
+        public static DataRecord From(IEnumerable<KeyValuePair<string, object?>> values, IEqualityComparer<string> comparer)
+        {
+            _ = values ?? throw new ArgumentNullException(nameof(values));
+            _ = comparer ?? throw new ArgumentNullException(nameof(comparer));
+
+            return new DictionaryDataRecord(values, comparer);
+        }
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(IEnumerable<KeyValuePair<string, object?>> values) => From(values, StringComparer.InvariantCultureIgnoreCase);
+
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(IEqualityComparer<string> comparer, params (string, object?)[] values) => From(values, comparer);
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(params (string, object?)[] values) => From(values, StringComparer.InvariantCultureIgnoreCase);
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(IEnumerable<(string, object?)> values) => From(values, StringComparer.InvariantCultureIgnoreCase);
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(IEnumerable<(string, object?)> values, IEqualityComparer<string> comparer)
+        {
+            _ = values ?? throw new ArgumentNullException(nameof(values));
+            _ = comparer ?? throw new ArgumentNullException(nameof(comparer));
+
+            return new DictionaryDataRecord(values, comparer);
+        }
+
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(IDictionary<string, object?> values) => From(values, StringComparer.InvariantCultureIgnoreCase);
+
+        /// <inheritdoc cref="From(IEnumerable{KeyValuePair{string, object?}}, IEqualityComparer{string})"/>
+        public static DataRecord From(IDictionary<string, object?> values, IEqualityComparer<string> comparer)
+        {
+            _ = values ?? throw new ArgumentNullException(nameof(values));
+            _ = comparer ?? throw new ArgumentNullException(nameof(comparer));
+
+            return new DictionaryDataRecord(values, comparer);
+        }
+        #endregion
     }
 }
