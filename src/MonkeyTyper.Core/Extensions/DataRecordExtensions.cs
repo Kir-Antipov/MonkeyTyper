@@ -37,7 +37,10 @@ namespace MonkeyTyper.Core.Extensions
             _ = record ?? throw new ArgumentNullException(nameof(record));
             _ = name ?? throw new ArgumentNullException(nameof(name));
 
-            return Array.FindIndex(record.PropertyNames, x => string.Equals(x, name, comparisonType));
+            for (int i = 0; i < record.PropertyNames.Count; ++i)
+                if (string.Equals(record.PropertyNames[i], name, comparisonType))
+                    return i;
+            return -1;
         }
 
         /// <inheritdoc cref="GetOrdinal(IDataRecord, string, StringComparison)"/>
