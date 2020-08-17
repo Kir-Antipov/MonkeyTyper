@@ -8,21 +8,32 @@ namespace MonkeyTyper.Core.Data
     /// </summary>
     public abstract class DataReader : DataRecord, IDataReader
     {
-        /// <inheritdoc cref="IDataReader.Count"/>
+        /// <inheritdoc/>
         public virtual int Count => -1;
 
-        /// <inheritdoc cref="IDataReader.Read"/>
+        /// <inheritdoc/>
         public virtual bool Read() => ReadAsync().Result;
 
-        /// <inheritdoc cref="IDataReader.ReadAsync"/>
+        /// <inheritdoc/>
         public virtual Task<bool> ReadAsync() => Task.FromResult(Read());
 
 
-        /// <inheritdoc cref="IDataReader.NextResult"/>
+        /// <inheritdoc/>
         public virtual bool NextResult() => NextResultAsync().Result;
 
-        /// <inheritdoc cref="IDataReader.NextResultAsync"/>
+        /// <inheritdoc/>
         public virtual Task<bool> NextResultAsync() => Task.FromResult(NextResult());
+
+
+        /// <inheritdoc/>
+        public virtual void Reset() => ResetAsync().Wait();
+
+        /// <inheritdoc/>
+        public virtual Task ResetAsync()
+        {
+            Reset();
+            return Task.CompletedTask;
+        }
 
 
         /// <inheritdoc cref="IDisposable.Dispose"/>

@@ -38,5 +38,14 @@ namespace MonkeyTyper.Core.Data
         bool NextResult();
         /// <inheritdoc cref="NextResult"/>
         Task<bool> NextResultAsync();
+
+        /// <summary>
+        /// Sets the <see cref="IDataReader"/> to its initial position,
+        /// which is before the first element in the data source.
+        /// </summary>
+        void Reset();
+        /// <inheritdoc cref="Reset"/>
+        /// <returns>An asynchronous task context.</returns>
+        Task ResetAsync();
     }
 }
