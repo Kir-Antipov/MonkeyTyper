@@ -210,7 +210,7 @@ namespace MonkeyTyper.WinForms.Forms
 
         private void Sections_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            if (SettingsViews.TryGetValue(e.Node, out DataGridView view) || e.Node.FirstNode is { } && SettingsViews.TryGetValue(e.Node.FirstNode, out view))
+            if (SettingsViews.TryGetValue(e.Node, out DataGridView? view) || e.Node.FirstNode is { } && SettingsViews.TryGetValue(e.Node.FirstNode, out view))
                 view.BringToFront();
         }
         #endregion

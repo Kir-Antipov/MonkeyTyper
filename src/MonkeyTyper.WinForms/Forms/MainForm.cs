@@ -100,8 +100,8 @@ namespace MonkeyTyper.WinForms.Forms
                 Type type = DataReaders[i];
                 if (type.GUID == guid
                     || type.Name.Equals(AppSettings.DataReader, StringComparison.InvariantCultureIgnoreCase)
-                    || type.FullName.Equals(AppSettings.DataReader, StringComparison.InvariantCultureIgnoreCase)
-                    || type.AssemblyQualifiedName.Equals(AppSettings.DataReader, StringComparison.InvariantCultureIgnoreCase))
+                    || type.FullName!.Equals(AppSettings.DataReader, StringComparison.InvariantCultureIgnoreCase)
+                    || type.AssemblyQualifiedName!.Equals(AppSettings.DataReader, StringComparison.InvariantCultureIgnoreCase))
                 {
                     dataReader.SelectedIndex = i;
                 }
@@ -118,7 +118,7 @@ namespace MonkeyTyper.WinForms.Forms
             AppSettings.UseSSL = smtpSSL.Checked;
             AppSettings.DataReader = dataReader.SelectedIndex < 0 || dataReader.SelectedIndex >= DataReaders.Length ?
                 string.Empty :
-                DataReaders[dataReader.SelectedIndex].AssemblyQualifiedName;
+                DataReaders[dataReader.SelectedIndex].AssemblyQualifiedName!;
         }
 
         private void AddAttachment(string path)
@@ -288,7 +288,7 @@ namespace MonkeyTyper.WinForms.Forms
                 Mailing.SetMessageProgress(0, 100);
                 Mailing.SetTotalProgress(0, 100);
 
-                void pauseEvent(object sender, BeforeMessageSentEventArgs e)
+                void pauseEvent(object? sender, BeforeMessageSentEventArgs e)
                 {
                     Invoke(new Action(() =>
                     {

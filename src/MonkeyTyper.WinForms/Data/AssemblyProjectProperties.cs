@@ -41,7 +41,7 @@ namespace MonkeyTyper.WinForms.Data
         /// </summary>
         public AssemblyProjectProperties()
         {
-            Assembly entry = Assembly.GetEntryAssembly();
+            Assembly entry = Assembly.GetEntryAssembly()!;
 
             Copyright = ExtractCopyright(entry);
             Authors = ExtractAuthors(entry);
@@ -77,7 +77,7 @@ namespace MonkeyTyper.WinForms.Data
 
         private static string ExtractProduct(Assembly entry) =>
             entry.GetCustomAttribute<AssemblyProductAttribute>()?.Product ??
-            entry.GetName().Name;
+            entry.GetName().Name!;
 
         private static string ExtractVersion(Assembly entry) =>
             entry.GetCustomAttribute<AssemblyVersionAttribute>()?.Version ??
