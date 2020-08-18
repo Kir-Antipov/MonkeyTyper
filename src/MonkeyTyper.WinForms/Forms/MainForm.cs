@@ -56,6 +56,7 @@ namespace MonkeyTyper.WinForms.Forms
         public MainForm(IServiceProvider serviceProvider, IProjectProperties properties, ISettingsProvider settings)
         {
             InitializeComponent();
+            InitializeNetCoreComponent();
             settings.Restore();
             ServiceProvider = serviceProvider;
             Properties = properties;

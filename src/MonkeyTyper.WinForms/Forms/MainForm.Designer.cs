@@ -20,6 +20,27 @@
             base.Dispose(disposing);
         }
 
+        #region NET Core Forms Fixer generated code
+        /// <summary>
+        /// This method fixes some of the differences
+        /// between .NET Framework and .NET Core.
+        /// </summary>
+        [System.Diagnostics.Conditional("NETCOREAPP")]
+        private void InitializeNetCoreComponent()
+        {
+            attachmentsPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            attachmentsLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Resize += Attachments_Resize;
+        }
+
+        private void Attachments_Resize(object sender, System.EventArgs e)
+        {
+            attachmentsPanel.Size = System.Drawing.Size.Subtract(attachmentsBox.Size, new System.Drawing.Size(2, 19));
+            attachmentsPanel.Location = new System.Drawing.Point(1, 17);
+            attachmentsLabel.Left = (attachmentsBox.Width - attachmentsLabel.Width) / 2;
+        }
+        #endregion
+
         #region Windows Form Designer generated code
 
         /// <summary>
