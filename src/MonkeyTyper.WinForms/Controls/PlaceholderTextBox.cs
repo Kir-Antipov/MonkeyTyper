@@ -12,9 +12,11 @@ namespace MonkeyTyper.WinForms.Controls
     {
 #if NETFRAMEWORK
         /// <summary>
-        /// Placeholder describing the purpose of the <see cref="TextBox"/>.
+        /// Gets or sets the text that is displayed when the
+        /// control has no text and does not have the focus.
         /// </summary>
         [Category("Appearance")]
+        [Description("Gets or sets the text that is displayed when the control has no text and does not have the focus.")]
         public string PlaceholderText
         {
             get => _placeholderText;
