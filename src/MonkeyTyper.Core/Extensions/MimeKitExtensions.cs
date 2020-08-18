@@ -1,5 +1,6 @@
 ﻿using MimeKit;
 using System;
+using System.Collections.Generic;
 
 namespace MonkeyTyper.Core.Extensions
 {
@@ -81,6 +82,43 @@ namespace MonkeyTyper.Core.Extensions
                     clone.Headers.Add(header);
 
             return clone;
+        }
+
+        /// <summary>
+        /// Adds an email address with the specified details
+        /// to the <see cref="InternetAddress"/> collection.
+        /// </summary>
+        /// <param name="internetAddresses">
+        /// <see cref="ICollection{T}"/> instance.
+        /// </param>
+        /// <param name="name">Mailbox display name.</param>
+        /// <param name="address">Mailbox address.</param>
+        /// <returns>
+        /// The <see cref="MailboxAddress"/> instance.
+        /// </returns>
+        /// <exception cref="ParseException">
+        /// An invalid email address was passed.
+        /// </exception>
+        public static MailboxAddress Add(this ICollection<InternetAddress> internetAddresses, string name, string address)
+        {
+            _ = internetAddresses ?? throw new ArgumentNullException(nameof(internetAddresses));
+            _ = address ?? throw new ArgumentNullException(nameof(address));
+            _ = name ?? throw new ArgumentNullException(nameof(name));
+
+            MailboxAddress mailbox = new MailboxAddress(name, address);
+            internetAddresses.Add(mailbox);
+            return mailbox;
+        }
+
+        /// <inheritdoc cref="Add(ICollection{InternetAddress}, string, string)"/>
+        public static MailboxAddress Add(this ICollection<InternetAddress> internetAddresses, string address)
+        {
+            _ = internetAddresses ?? throw new ArgumentNullException(nameof(internetAddresses));
+            _ = address ?? throw new ArgumentNullException(nameof(address));
+
+            MailboxAddress mailbox = MailboxAddress.Parse(address);
+            internetAddresses.Add(mailbox);
+            return mailbox;
         }
     }
 }
