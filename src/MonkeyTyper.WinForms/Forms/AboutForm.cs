@@ -7,9 +7,18 @@ using System.Windows.Forms;
 
 namespace MonkeyTyper.WinForms.Forms
 {
+    /// <summary>
+    /// Program's about window.
+    /// </summary>
     public partial class AboutForm : Form
     {
         #region Init
+        /// <summary>
+        /// Initialize a new instance of the <see cref="AboutForm"/> class.
+        /// </summary>
+        /// <param name="properties">
+        /// An object that provides access to project properties.
+        /// </param>
         public AboutForm(IProjectProperties properties)
         {
             InitializeComponent();

@@ -167,6 +167,7 @@ namespace MonkeyTyper.WinForms.Forms
         #endregion
 
         #region Handlers
+        /// <inheritdoc/>
         protected override void OnShown(EventArgs e)
         {
             foreach (DataGridView grid in SettingsViews.Values)
