@@ -34,6 +34,7 @@ namespace MonkeyTyper.Core.Mail
         /// <item><see cref="MessageTransferProgress"/></item>
         /// <item><see cref="MessageTransferError"/> (if something went wrong)</item>
         /// <item><see cref="MessageSent"/></item>
+        /// <item><see cref="MessageProcessed"/></item>
         /// </list>
         /// </remarks>
         event EventHandler<BeforeMessageSentEventArgs> BeforeMessageSent;
@@ -49,6 +50,13 @@ namespace MonkeyTyper.Core.Mail
         /// </summary>
         /// <inheritdoc cref="BeforeMessageSent"/>
         event EventHandler<MessageSentEventArgs> MessageSent;
+
+        /// <summary>
+        /// Occurs after the message is processed
+        /// (it doesn't have to be sent, message can also be skipped).
+        /// </summary>
+        /// <inheritdoc cref="BeforeMessageSent"/>
+        event EventHandler<MessageProcessedEventArgs> MessageProcessed;
 
         /// <summary>
         /// Occurs after message mutation error.
@@ -92,29 +100,6 @@ namespace MonkeyTyper.Core.Mail
         /// </exception>
         /// <inheritdoc cref="Authenticate(Uri, string, string, Encoding)"/>
         Task AuthenticateAsync(Uri uri, string userName, string password, Encoding? encoding = null, CancellationToken cancellationToken = default);
-
-        /// <summary>
-        /// Sends the specified message.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <exception cref="InvalidOperationException">
-        /// The client is not connected.
-        /// </exception>
-        void Send(MimeMessage message);
-
-        /// <summary>
-        /// Asynchronously sends the specified message.
-        /// </summary>
-        /// <param name="message">The message.</param>
-        /// <param name="cancellationToken">The cancellation token.</param>
-        /// <returns>An asynchronous task context.</returns>
-        /// <exception cref="InvalidOperationException">
-        /// The client is not connected.
-        /// </exception>
-        /// <exception cref="OperationCanceledException">
-        /// The operation was canceled via the cancellation token.
-        /// </exception>
-        Task SendAsync(MimeMessage message, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Sends the specified message.

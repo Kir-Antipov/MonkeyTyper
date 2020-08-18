@@ -19,22 +19,25 @@ namespace MonkeyTyper.Core.Mail
     public class DefaultMailClient : IMailClient
     {
         #region Var
-        /// <inheritdoc cref="IMailClient.Protocol"/>
+        /// <inheritdoc/>
         public virtual string Protocol => "smtp";
 
-        /// <inheritdoc cref="IMailClient.BeforeMessageSent"/>
+        /// <inheritdoc/>
         public virtual event EventHandler<BeforeMessageSentEventArgs>? BeforeMessageSent;
 
-        /// <inheritdoc cref="IMailClient.MessageTransferProgress"/>
+        /// <inheritdoc/>
         public virtual event EventHandler<MessageTransferProgressEventArgs>? MessageTransferProgress;
 
-        /// <inheritdoc cref="IMailClient.MessageSent"/>
+        /// <inheritdoc/>
         public virtual event EventHandler<MessageSentEventArgs>? MessageSent;
 
-        /// <inheritdoc cref="IMailClient.MessageMutationError"/>
+        /// <inheritdoc/>
+        public event EventHandler<MessageProcessedEventArgs>? MessageProcessed;
+
+        /// <inheritdoc/>
         public virtual event EventHandler<MessageMutationErrorEventArgs>? MessageMutationError;
 
-        /// <inheritdoc cref="IMailClient.MessageTransferError"/>
+        /// <inheritdoc/>
         public virtual event EventHandler<MessageTransferErrorEventArgs>? MessageTransferError;
 
         private IStringFormatter Formatter { get; }
@@ -43,17 +46,22 @@ namespace MonkeyTyper.Core.Mail
         #endregion
 
         #region Init
+        /// <summary>
+        /// Initialize a new instance of the <see cref="DefaultMailClient"/> class.
+        /// </summary>
+        /// <param name="formatter">Custom string formatter.</param>
         public DefaultMailClient(IStringFormatter? formatter = null)
         {
             Formatter = formatter ?? new DefaultStringFormatter();
             Client = new SmtpClient();
         }
 
+        /// <inheritdoc/>
         ~DefaultMailClient() => Dispose(false);
         #endregion
 
         #region Functions
-        /// <inheritdoc cref="IMailClient.Authenticate(Uri, string, string, Encoding)"/>
+        /// <inheritdoc/>
         public virtual void Authenticate(Uri uri, string userName, string password, Encoding? encoding = null)
         {
             _ = uri ?? throw new ArgumentNullException(nameof(uri));
@@ -64,7 +72,7 @@ namespace MonkeyTyper.Core.Mail
             Client.Authenticate(encoding ?? Encoding.UTF8, userName, password);
         }
 
-        /// <inheritdoc cref="IMailClient.AuthenticateAsync(Uri, string, string, Encoding, CancellationToken)"/>
+        /// <inheritdoc/>
         public Task AuthenticateAsync(Uri uri, string userName, string password, Encoding? encoding = null, CancellationToken cancellationToken = default)
         {
             _ = uri ?? throw new ArgumentNullException(nameof(uri));
@@ -81,40 +89,28 @@ namespace MonkeyTyper.Core.Mail
             await Client.AuthenticateAsync(encoding ?? Encoding.UTF8, userName, password, cancellationToken).ConfigureAwait(false);
         }
 
-        /// <inheritdoc cref="IMailClient.Send(MimeMessage)"/>
-        public virtual void Send(MimeMessage message) => Client.Send(message ?? throw new ArgumentNullException(nameof(message)));
-
-        /// <inheritdoc cref="IMailClient.SendAsync(MimeMessage, CancellationToken)"/>
-        public Task SendAsync(MimeMessage message, CancellationToken cancellationToken = default)
-        {
-            _ = message ?? throw new ArgumentNullException(nameof(message));
-
-            return SendAsyncImpl(message, cancellationToken);
-        }
-
-        /// <inheritdoc cref="IMailClient.SendAsync(MimeMessage, CancellationToken)"/>
-        protected virtual Task SendAsyncImpl(MimeMessage message, CancellationToken cancellationToken) => Client.SendAsync(message, cancellationToken);
-
-        /// <inheritdoc cref="IMailClient.Send(IMessageBuilder, IDataRecord, IEnumerable{IMessageMutator}, IFormatProvider)"/>
+        /// <inheritdoc/>
         public MimeMessage? Send(IMessageBuilder messageBuilder, IDataRecord record, IEnumerable<IMessageMutator>? messageMutators = null, IFormatProvider? formatProvider = null)
         {
             _ = messageBuilder ?? throw new ArgumentNullException(nameof(messageBuilder));
             _ = record ?? throw new ArgumentNullException(nameof(record));
             messageMutators ??= Array.Empty<IMessageMutator>();
 
-            return SendImpl(messageBuilder, record, messageMutators, formatProvider ?? CultureInfo.InvariantCulture, out _);
+            return SendImpl(messageBuilder, record, messageMutators, formatProvider ?? CultureInfo.InvariantCulture, 0, 1, out _);
         }
 
+        /// <param name="index">Zero-based message ordinal.</param>
+        /// <param name="count">
+        /// The total number of messages to be
+        /// sent by the calling method.
+        /// </param>
         /// <param name="stop">Indicates whether the calling method should terminate execution.</param>
         /// <inheritdoc cref="IMailClient.Send(IMessageBuilder, IDataRecord, IEnumerable{IMessageMutator}, IFormatProvider)"/>
-        protected virtual MimeMessage? SendImpl(IMessageBuilder messageBuilder, IDataRecord record, IEnumerable<IMessageMutator> messageMutators, IFormatProvider formatProvider, out bool stop)
+        protected virtual MimeMessage? SendImpl(IMessageBuilder messageBuilder, IDataRecord record, IEnumerable<IMessageMutator> messageMutators, IFormatProvider formatProvider, int index, int count, out bool stop)
         {
             stop = false;
             IMessageBuilder message = messageBuilder.Clone();
-            if (!string.IsNullOrEmpty(message.TextBody))
-                message.TextBody = Formatter.Format(message.TextBody!, record, formatProvider);
-            if (!string.IsNullOrEmpty(message.HtmlBody))
-                message.HtmlBody = Formatter.Format(message.HtmlBody!, record, formatProvider);
+            FormatMessage(message, record, formatProvider);
             foreach (IMessageMutator mutator in messageMutators)
                 try
                 {
@@ -131,6 +127,7 @@ namespace MonkeyTyper.Core.Mail
                     }
                     else if (errorArgs.Skip)
                     {
+                        MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(message.ToMessage(), index, count, ProcessedType.Skipped));
                         return null;
                     }
                     else if (errorArgs.SkipMutation)
@@ -149,6 +146,7 @@ namespace MonkeyTyper.Core.Mail
             }
             else if (beforeArgs.Skip)
             {
+                MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(message.ToMessage(), index, count, ProcessedType.Skipped));
                 return null;
             }
 
@@ -162,6 +160,7 @@ namespace MonkeyTyper.Core.Mail
 
                     Client.Send(result, progress: transferProgress);
                     MessageSent?.Invoke(this, new MessageSentEventArgs(result));
+                    MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(result, index, count, ProcessedType.Sent));
                     return result;
                 }
                 catch (Exception e)
@@ -175,6 +174,7 @@ namespace MonkeyTyper.Core.Mail
                     }
                     else if (errorArgs.Skip)
                     {
+                        MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(result, index, count, ProcessedType.Skipped));
                         return null;
                     }
                     else if (errorArgs.Retry)
@@ -185,24 +185,21 @@ namespace MonkeyTyper.Core.Mail
                 }
         }
 
-        /// <inheritdoc cref="IMailClient.SendAsync(IMessageBuilder, IDataRecord, IEnumerable{IMessageMutator}, IFormatProvider, CancellationToken)"/>
+        /// <inheritdoc/>
         public Task<MimeMessage?> SendAsync(IMessageBuilder messageBuilder, IDataRecord record, IEnumerable<IMessageMutator>? messageMutators = null, IFormatProvider? formatProvider = null, CancellationToken cancellationToken = default)
         {
             _ = messageBuilder ?? throw new ArgumentNullException(nameof(messageBuilder));
             _ = record ?? throw new ArgumentNullException(nameof(record));
             messageMutators ??= Array.Empty<IMessageMutator>();
 
-            return SendAsyncImpl(messageBuilder, record, messageMutators, formatProvider ?? CultureInfo.InvariantCulture, cancellationToken).ContinueWith(x => x.Result.Message);
+            return SendAsyncImpl(messageBuilder, record, messageMutators, formatProvider ?? CultureInfo.InvariantCulture, 0, 1, cancellationToken).ContinueWith(x => x.Result.Message);
         }
 
         /// <inheritdoc cref="IMailClient.SendAsync(IMessageBuilder, IDataRecord, IEnumerable{IMessageMutator}, CancellationToken)"/>
-        protected virtual async Task<(MimeMessage? Message, bool Stop)> SendAsyncImpl(IMessageBuilder messageBuilder, IDataRecord record, IEnumerable<IMessageMutator> messageMutators, IFormatProvider formatProvider, CancellationToken cancellationToken)
+        protected virtual async Task<(MimeMessage? Message, bool Stop)> SendAsyncImpl(IMessageBuilder messageBuilder, IDataRecord record, IEnumerable<IMessageMutator> messageMutators, IFormatProvider formatProvider, int index, int count, CancellationToken cancellationToken)
         {
             IMessageBuilder message = messageBuilder.Clone();
-            if (!string.IsNullOrEmpty(message.TextBody))
-                message.TextBody = Formatter.Format(message.TextBody!, record, formatProvider);
-            if (!string.IsNullOrEmpty(message.HtmlBody))
-                message.HtmlBody = Formatter.Format(message.HtmlBody!, record, formatProvider);
+            FormatMessage(message, record, formatProvider);
             foreach (IMessageMutator mutator in messageMutators)
                 try
                 {
@@ -218,6 +215,7 @@ namespace MonkeyTyper.Core.Mail
                     }
                     else if (errorArgs.Skip)
                     {
+                        MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(message.ToMessage(), index, count, ProcessedType.Skipped));
                         return (null, false);
                     }
                     else if (errorArgs.SkipMutation)
@@ -235,6 +233,7 @@ namespace MonkeyTyper.Core.Mail
             }
             else if (beforeArgs.Skip)
             {
+                MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(message.ToMessage(), index, count, ProcessedType.Skipped));
                 return (null, false);
             }
 
@@ -248,6 +247,7 @@ namespace MonkeyTyper.Core.Mail
 
                     await Client.SendAsync(result, cancellationToken, progress: transferProgress).ConfigureAwait(false);
                     MessageSent?.Invoke(this, new MessageSentEventArgs(result));
+                    MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(result, index, count, ProcessedType.Sent));
                     return (result, false);
                 }
                 catch (Exception e)
@@ -260,6 +260,7 @@ namespace MonkeyTyper.Core.Mail
                     }
                     else if (errorArgs.Skip)
                     {
+                        MessageProcessed?.Invoke(this, new MessageProcessedEventArgs(result, index, count, ProcessedType.Skipped));
                         return (null, false);
                     }
                     else if (errorArgs.Retry)
@@ -270,7 +271,7 @@ namespace MonkeyTyper.Core.Mail
                 }
         }
 
-        /// <inheritdoc cref="IMailClient.BulkSend(IMessageBuilder, IDataReader, IEnumerable{IMessageMutator}, IFormatProvider)"/>
+        /// <inheritdoc/>
         public IEnumerable<MimeMessage> BulkSend(IMessageBuilder messageBuilder, IDataReader reader, IEnumerable<IMessageMutator>? messageMutators = null, IFormatProvider? formatProvider = null)
         {
             _ = messageBuilder ?? throw new ArgumentNullException(nameof(messageBuilder));
@@ -286,9 +287,10 @@ namespace MonkeyTyper.Core.Mail
         {
             do
             {
+                int i = -1;
                 while (reader.Read())
                 {
-                    MimeMessage? message = SendImpl(messageBuilder, reader, messageMutators, formatProvider, out bool stop);
+                    MimeMessage? message = SendImpl(messageBuilder, reader, messageMutators, formatProvider, ++i, reader.Count, out bool stop);
                     switch ((message, stop))
                     {
                         case (_, true):
@@ -304,7 +306,7 @@ namespace MonkeyTyper.Core.Mail
             while (reader.NextResult());
         }
 
-        /// <inheritdoc cref="IMailClient.BulkSendAsync(IMessageBuilder, IDataReader, IEnumerable{IMessageMutator}, IFormatProvider, CancellationToken)"/>
+        /// <inheritdoc/>
         public IAsyncEnumerable<MimeMessage> BulkSendAsync(IMessageBuilder messageBuilder, IDataReader reader, IEnumerable<IMessageMutator>? messageMutators = null, IFormatProvider? formatProvider = null, CancellationToken cancellationToken = default)
         {
             _ = messageBuilder ?? throw new ArgumentNullException(nameof(messageBuilder));
@@ -320,10 +322,11 @@ namespace MonkeyTyper.Core.Mail
         {
             do
             {
+                int i = -1;
                 while (await reader.ReadAsync().ConfigureAwait(false))
                 {
                     cancellationToken.ThrowIfCancellationRequested();
-                    switch (await SendAsyncImpl(messageBuilder, reader, messageMutators, formatProvider, cancellationToken).ConfigureAwait(false))
+                    switch (await SendAsyncImpl(messageBuilder, reader, messageMutators, formatProvider, ++i, reader.Count, cancellationToken).ConfigureAwait(false))
                     {
                         case (_, true):
                             yield break;
@@ -336,6 +339,50 @@ namespace MonkeyTyper.Core.Mail
                 }
             }
             while (await reader.NextResultAsync().ConfigureAwait(false));
+        }
+
+        /// <summary>
+        /// Substitutes dynamic values ​​into <see cref="IMessageBuilder"/>.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <param name="record">The data record.</param>
+        /// <param name="formatProvider">An object that supplies format information about the current instance.</param>
+        protected virtual void FormatMessage(IMessageBuilder message, IDataRecord record, IFormatProvider formatProvider)
+        {
+            if (!string.IsNullOrEmpty(message.Subject))
+                message.Subject = Formatter.Format(message.Subject!, record, formatProvider);
+            if (!string.IsNullOrEmpty(message.TextBody))
+                message.TextBody = Formatter.Format(message.TextBody!, record, formatProvider);
+            if (!string.IsNullOrEmpty(message.HtmlBody))
+                message.HtmlBody = Formatter.Format(message.HtmlBody!, record, formatProvider);
+            FormatAddresses(message.To, record, formatProvider);
+            FormatAddresses(message.From, record, formatProvider);
+        }
+
+        /// <summary>
+        /// Substitutes dynamic values ​​into <paramref name="addresses"/>.
+        /// </summary>
+        /// <param name="addresses">Collection of internet addresses.</param>
+        /// <param name="record">The data record.</param>
+        /// <param name="formatProvider">An object that supplies format information about the current instance.</param>
+        protected virtual void FormatAddresses(IList<InternetAddress> addresses, IDataRecord record, IFormatProvider formatProvider)
+        {
+            for (int i = 0; i < addresses.Count; ++i)
+            {
+                if (!(addresses[i] is MailboxAddress mailbox))
+                    continue;
+
+                string address = Formatter.Format(mailbox.Address, record, formatProvider);
+                if (string.IsNullOrEmpty(mailbox.Name))
+                {
+                    addresses[i] = MailboxAddress.Parse(address);
+                }
+                else
+                {
+                    string name = Formatter.Format(mailbox.Name, record, formatProvider);
+                    addresses[i] = new MailboxAddress(name, address);
+                }
+            }
         }
 
         /// <summary>
