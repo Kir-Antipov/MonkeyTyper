@@ -20,7 +20,6 @@
             base.Dispose(disposing);
         }
 
-        #region NET Core Forms Fixer generated code
         /// <summary>
         /// This method fixes some of the differences
         /// between .NET Framework and .NET Core.
@@ -39,7 +38,6 @@
             attachmentsPanel.Location = new System.Drawing.Point(1, 17);
             attachmentsLabel.Left = (attachmentsBox.Width - attachmentsLabel.Width) / 2;
         }
-        #endregion
 
         #region Windows Form Designer generated code
 
@@ -52,6 +50,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openMessageFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +84,7 @@
             this.sendButton = new System.Windows.Forms.Button();
             this.enableHTML = new System.Windows.Forms.CheckBox();
             this.recipientAddress = new MonkeyTyper.WinForms.Controls.PlaceholderTextBox();
+            this.openMessageFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip.SuspendLayout();
             this.attachmentsBox.SuspendLayout();
             this.attachmentsPanel.SuspendLayout();
@@ -92,20 +95,50 @@
             // 
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(782, 30);
+            this.menuStrip.Size = new System.Drawing.Size(782, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openMessageFileToolStripMenuItem,
+            this.exitSeparator,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // openMessageFileToolStripMenuItem
+            // 
+            this.openMessageFileToolStripMenuItem.Name = "openMessageFileToolStripMenuItem";
+            this.openMessageFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.openMessageFileToolStripMenuItem.Text = "Open file...";
+            this.openMessageFileToolStripMenuItem.Click += new System.EventHandler(this.OpenMessageFile_Click);
+            // 
+            // exitSeparator
+            // 
+            this.exitSeparator.Name = "exitSeparator";
+            this.exitSeparator.Size = new System.Drawing.Size(221, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.Exit_Click);
             // 
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // settingsToolStripMenuItem
@@ -124,7 +157,7 @@
             this.aboutSeparator,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // visitWebsiteToolStripMenuItem
@@ -414,6 +447,11 @@
             this.recipientAddress.Size = new System.Drawing.Size(450, 27);
             this.recipientAddress.TabIndex = 17;
             // 
+            // openMessageFileDialog
+            // 
+            this.openMessageFileDialog.AddExtension = false;
+            this.openMessageFileDialog.Title = "Select message file...";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -485,5 +523,10 @@
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.CheckBox enableHTML;
         private Controls.PlaceholderTextBox recipientAddress;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openMessageFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator exitSeparator;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openMessageFileDialog;
     }
 }

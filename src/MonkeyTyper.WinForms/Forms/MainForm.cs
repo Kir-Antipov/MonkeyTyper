@@ -162,6 +162,14 @@ namespace MonkeyTyper.WinForms.Forms
         #endregion
 
         #region Handlers
+        private void OpenMessageFile_Click(object sender, EventArgs e)
+        {
+            if (openMessageFileDialog.ShowDialog() == DialogResult.OK)
+                messageText.Text = File.ReadAllText(openMessageFileDialog.FileName);
+        }
+
+        private void Exit_Click(object sender, EventArgs e) => Dispose();
+
         private void Settings_Click(object sender, EventArgs e)
         {
             if (Settings.ShowDialog() == DialogResult.OK)
