@@ -10,7 +10,7 @@ namespace MonkeyTyper.Core.Format
     public class DefaultStringFormatter : StringFormatter
     {
         private static Regex FormatExtractor { get; } = new Regex(@"(?<!(?:(?:^|[^\\])(?:[\\]{2})*[\\])){(?<expression>[^}:]+)(?::(?<format>[^}]+))?}", RegexOptions.Compiled | RegexOptions.Multiline);
-        private static Regex SlashExtractor { get; } = new Regex(@"[\\]*", RegexOptions.Compiled | RegexOptions.Multiline);
+        private static Regex SlashExtractor { get; } = new Regex(@"[\\]+", RegexOptions.Compiled | RegexOptions.Multiline);
 
         /// <inheritdoc cref="StringFormatter.Format(string, IDataRecord, IFormatProvider)"/>
         public sealed override string Format(string format, IDataRecord record, IFormatProvider formatProvider)
