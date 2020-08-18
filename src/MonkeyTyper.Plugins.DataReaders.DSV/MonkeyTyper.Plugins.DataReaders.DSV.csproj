@@ -4,10 +4,30 @@
     <TargetFrameworks>net461;net48;netstandard2.0;netstandard2.1</TargetFrameworks>
     <Nullable>enable</Nullable>
     <LangVersion>8.0</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Kir_Antipov</Authors>
+    <PackageTags>email email-sender extensible bulk bulk-operation net net-core monkey-typer-plugin</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/Kir-Antipov/MonkeyTyper</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Kir-Antipov/MonkeyTyper</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>Plugin for MonkeyTyper that allows application to read data from DSV files (e.g., CSV, TSV, etc.)</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MonkeyTyper.Core\MonkeyTyper.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\media\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
