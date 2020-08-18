@@ -1,5 +1,7 @@
 ﻿using MonkeyTyper.Core.Mail;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace MonkeyTyper.Core.Extensions
 {
@@ -67,6 +69,42 @@ namespace MonkeyTyper.Core.Extensions
 
             args.Retry = true;
             return args;
+        }
+
+        /// <summary>
+        /// Sets <see cref="MessageTransferErrorEventArgs.Retry"/> to <see langword="true"/>
+        /// after the specified timeout.
+        /// </summary>
+        /// <typeparam name="TEventArgs">
+        /// The <see cref="MessageTransferErrorEventArgs"/> instance's type.
+        /// </typeparam>
+        /// <param name="args">
+        /// The <see cref="MessageTransferErrorEventArgs"/> instance.
+        /// </param>
+        /// <param name="millisecondsTimeout">
+        /// The number of milliseconds for which the thread is suspended.
+        /// </param>
+        /// <returns>
+        /// The <see cref="MessageTransferErrorEventArgs"/> instance.
+        /// </returns>
+        public static TEventArgs RetryAfter<TEventArgs>(this TEventArgs args, int millisecondsTimeout) where TEventArgs : MessageTransferErrorEventArgs
+        {
+            _ = args ?? throw new ArgumentNullException(nameof(args));
+
+            Thread.Sleep(millisecondsTimeout);
+            args.Retry = true;
+            return args;
+        }
+
+        /// <inheritdoc cref="RetryAfter{TEventArgs}(TEventArgs, int)"/>
+        public static async Task<TEventArgs> RetryAfterAsync<TEventArgs>(this TEventArgs args, int millisecondsTimeout) where TEventArgs : MessageTransferErrorEventArgs
+        {
+            _ = args ?? throw new ArgumentNullException(nameof(args));
+
+            await Task.Delay(millisecondsTimeout).ConfigureAwait(false);
+            args.Retry = true;
+            return args;
+
         }
 
         /// <summary>
