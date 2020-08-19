@@ -20,14 +20,14 @@ MonkeyTyper is an extensible application that was created for sending bulk email
 
 MonkeyTyper's implementation based on Windows Forms (a.k.a. WinForms):
 
-![Application preview](./media/MonkeyTyper.WinForms-preview.png)
+<img src="./media/MonkeyTyper.WinForms-preview.png" alt="Application preview" width="530" />
 
-Requirements:
+**Requirements**:
 
 - Windows 7+ or Windows Server 2008 R2 SP1+
 - [.NET Framework 4.6.1+](https://dotnet.microsoft.com/download/dotnet-framework/) or [.NET Core 3.1+ Desktop Runtime](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
-Abilities (✔️ - Done, ⚠️ - W.I.P., ❌ - Not supported):
+**Abilities** (✔️ - Done, ⚠️ - W.I.P., ❌ - Not supported):
 
 ✔️ Send bulk emails<br>
 ✔️ Pause mailing process<br>
@@ -40,6 +40,12 @@ Abilities (✔️ - Done, ⚠️ - W.I.P., ❌ - Not supported):
 ⚠️ Internationalization<br>
 ⚠️ Automatic update<br>
 ❌ Cross-platform<br>
+
+**Download**:
+
+ - .NET Framework 4.6.1+ [latest release](https://github.com/Kir-Antipov/MonkeyTyper/releases/latest/download/MonkeyTyper.WinForms-net461.zip)
+ - .NET Framewrok 4.8+ [latest release](https://github.com/Kir-Antipov/MonkeyTyper/releases/latest/download/MonkeyTyper.WinForms-net48.zip)
+ - .NET Core 3.1+ [latest release](https://github.com/Kir-Antipov/MonkeyTyper/releases/latest/download/MonkeyTyper.WinForms-netcoreapp3.1.zip)
 
 ## 📤 Usage
 
@@ -207,6 +213,10 @@ Here we'll describe the standard services that can be overridden/supplemented wi
 | `ISettingsProvider` | Provides access to application/plugins settings. | `DefaultSettingsProvider` | - | Must be registered as a `ServiceLifetime.Singleton`. |
 | `IPluginManager` | Describes methods for interacting with custom plugins. | `DefaultPluginManager` | - |
 
+## 📚 Documentation
+
+Check out the full [documentation](https://kir-antipov.github.io/MonkeyTyper/Help) for more details.
+
 ## 🙋‍♀️🙋‍♂ Contributions
 
 1. [Fork](https://github.com/Kir-Antipov/MonkeyTyper/fork) or [download](https://github.com/Kir-Antipov/MonkeyTyper/archive/development.zip) this repository.
@@ -221,7 +231,7 @@ MIT © [Kir_Antipov](https://github.com/Kir-Antipov/)
 [1]: https://img.shields.io/nuget/v/MonkeyTyper.Core.svg?style=flat-square&label=MonkeyTyper.Core&cacheSeconds=3600
 [2]: https://www.nuget.org/packages/MonkeyTyper.Core/
 
-[3]: https://img.shields.io/github/license/Kir-Antipov/MonkeyTyper.svg?style=flat-square&label=License&cacheSeconds=37000
+[3]: https://img.shields.io/github/license/Kir-Antipov/MonkeyTyper.svg?style=flat-square&label=License&cacheSeconds=36000
 [4]: https://raw.githubusercontent.com/Kir-Antipov/MonkeyTyper/master/LICENSE.md
 
 [5]: https://img.shields.io/nuget/v/MonkeyTyper.Plugins.DataReaders.DSV.svg?style=flat-square&label=MonkeyTyper.Plugins.DataReaders.DSV&cacheSeconds=3600
