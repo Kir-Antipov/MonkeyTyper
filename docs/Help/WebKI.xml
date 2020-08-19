@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="MimeKitExtensions.Add Method " Url="html/798bb154-2760-e1ca-b64b-05e5da589fb7.htm" />
+    <HelpKINode Title="Settings.Add Method " Url="html/96a237c5-8d2d-a154-22c3-11cf0c048ab0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Attachments property">
+    <HelpKINode Title="DefaultMessageBuilder.Attachments Property " Url="html/907f6bb1-c063-c518-9dc1-808ef8818937.htm" />
+    <HelpKINode Title="IMessageBuilder.Attachments Property " Url="html/3b12223f-7644-c3cf-a9e4-4f4a518842da.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Attempt property" Url="html/507d63f3-ea51-b6d9-681d-31f3a2f4b130.htm" />
+  <HelpKINode Title="Authenticate method">
+    <HelpKINode Title="DefaultMailClient.Authenticate Method " Url="html/c7934445-2809-afc3-e2a9-0d276ec1316f.htm" />
+    <HelpKINode Title="IMailClient.Authenticate Method " Url="html/ff6033ea-10fd-eb26-4fa1-b92b3dd4bca7.htm" />
+    <HelpKINode Title="MailClientExtensions.Authenticate Method " Url="html/bf5853d2-0254-f0df-8e64-bf852e597eb9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthenticateAsync method">
+    <HelpKINode Title="DefaultMailClient.AuthenticateAsync Method " Url="html/31f58f02-e569-43e2-fb5f-3a5c9515a21a.htm" />
+    <HelpKINode Title="IMailClient.AuthenticateAsync Method " Url="html/0a856665-98cf-0ec0-3a17-4e8bfd0c5595.htm" />
+    <HelpKINode Title="MailClientExtensions.AuthenticateAsync Method " Url="html/7d291856-0cff-50b4-657d-93a1227c802f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthenticateAsyncImpl method" Url="html/929e61f8-c855-3e1f-55e0-fe473ab1b008.htm" />
+  <HelpKINode Title="Bcc property">
+    <HelpKINode Title="DefaultMessageBuilder.Bcc Property " Url="html/3967ac84-9379-bb7e-0280-31a269ee16de.htm" />
+    <HelpKINode Title="IMessageBuilder.Bcc Property " Url="html/11a9457c-2f5d-4a63-ae6c-e71755f23bc3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BeforeMessageSent event">
+    <HelpKINode Title="DefaultMailClient.BeforeMessageSent Event" Url="html/05653581-751b-c981-457f-9c747b1b9022.htm" />
+    <HelpKINode Title="IMailClient.BeforeMessageSent Event" Url="html/0bf44fdb-5cbb-4c1c-a9b8-c7609c65f03d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BeforeMessageSentEventArgs class">
+    <HelpKINode Title="BeforeMessageSentEventArgs Class" Url="html/ef09dbc3-8323-6b1f-1edf-d5c97956d630.htm" />
+    <HelpKINode Title="constructor" Url="html/1782e454-beaf-2f24-364b-5fe33251fd14.htm" />
+    <HelpKINode Title="methods" Url="html/402ce1c6-f979-7957-28ee-fd9af204f3b5.htm" />
+    <HelpKINode Title="properties" Url="html/a2f3fc44-bce0-7c5c-6583-c52daea0152a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BeforeMessageSentEventArgs.BeforeMessageSentEventArgs constructor" Url="html/1782e454-beaf-2f24-364b-5fe33251fd14.htm" />
+  <HelpKINode Title="BeforeMessageSentEventArgs.Message property" Url="html/f5890eb9-a829-7806-4007-e6568b5f4c2a.htm" />
+  <HelpKINode Title="BeforeMessageSentEventArgs.Skip property" Url="html/9ebc9cdd-92f6-f548-7dab-a9c5e316b1c6.htm" />
+  <HelpKINode Title="BeforeMessageSentEventArgs.Stop property" Url="html/abc82f79-ddf8-f23f-1dbb-8c407a62db73.htm" />
+  <HelpKINode Title="BulkSend method">
+    <HelpKINode Title="DefaultMailClient.BulkSend Method " Url="html/fb978345-8a9c-ea54-a718-ee36621545c4.htm" />
+    <HelpKINode Title="IMailClient.BulkSend Method " Url="html/8a637bf4-ea42-4f52-07f5-71d30b7cbf1e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BulkSendAll method" Url="html/afda7fbe-b1cc-d2cd-3f4a-5431a4701611.htm" />
+  <HelpKINode Title="BulkSendAllAsync method" Url="html/0c5abbd9-c16c-8b3a-fc56-04377c3c9d51.htm" />
+  <HelpKINode Title="BulkSendAsync method">
+    <HelpKINode Title="DefaultMailClient.BulkSendAsync Method " Url="html/5869e8ed-7035-6a2e-da9c-998aea67e8ea.htm" />
+    <HelpKINode Title="IMailClient.BulkSendAsync Method " Url="html/fedc3ebd-c5b6-e892-42d9-a5ea094ca66b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BulkSendAsyncImpl method" Url="html/f449b2a4-11e4-a12d-09d3-57e31bc6adab.htm" />
+  <HelpKINode Title="BulkSendImpl method" Url="html/8dcdc45f-6964-1c33-7cab-a41e68c58a29.htm" />
+  <HelpKINode Title="BytesTransferred property" Url="html/629531bd-8ee2-f1f9-ce64-f4a0261a55f7.htm" />
+  <HelpKINode Title="Cc property">
+    <HelpKINode Title="DefaultMessageBuilder.Cc Property " Url="html/91adcc64-648f-f764-8023-08d6575c36a0.htm" />
+    <HelpKINode Title="IMessageBuilder.Cc Property " Url="html/fdffc41c-c3a7-26e5-c55f-3e70e889c6db.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Clone method">
+    <HelpKINode Title="DefaultMessageBuilder.Clone Method " Url="html/abc700f6-6290-62e5-6720-e708a0b75aad.htm" />
+    <HelpKINode Title="IMessageBuilder.Clone Method " Url="html/0578a5a9-06e1-6693-404c-4d54a27c5009.htm" />
+    <HelpKINode Title="MimeKitExtensions.Clone Method " Url="html/a8186722-fb46-f7a1-a956-5c5725536be4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ContainsKey method" Url="html/736347ae-bdc6-0975-9d5d-049e9fb5db70.htm" />
+  <HelpKINode Title="Count property">
+    <HelpKINode Title="DataReader.Count Property " Url="html/bf7e6a88-d3ac-a8a1-6498-370b3979e75e.htm" />
+    <HelpKINode Title="IDataReader.Count Property " Url="html/d8d65429-0f4d-71a0-b182-fed2a294eacf.htm" />
+    <HelpKINode Title="MessageProcessedEventArgs.Count Property " Url="html/fcb539a5-55ee-c4fc-3ecb-057248501a16.htm" />
+    <HelpKINode Title="Settings.Count Property " Url="html/b90a8672-6bb9-a218-7b0b-29e533b10788.htm" />
+    <HelpKINode Title="SinglelineDSVReader.Count Property " Url="html/7c160b70-0b6e-3a66-bca7-9b7399422cc1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataReader class">
+    <HelpKINode Title="DataReader Class" Url="html/e9408eaf-629b-f8e9-bafc-765cbfb75184.htm" />
+    <HelpKINode Title="constructor" Url="html/706be8f3-a47d-af5e-d738-957676fc899d.htm" />
+    <HelpKINode Title="methods" Url="html/004647bc-344b-2fd9-1229-25ac209793be.htm" />
+    <HelpKINode Title="properties" Url="html/5bbb6f34-270c-0c09-7817-24e41560198b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataReader.Count property" Url="html/bf7e6a88-d3ac-a8a1-6498-370b3979e75e.htm" />
+  <HelpKINode Title="DataReader.DataReader constructor" Url="html/706be8f3-a47d-af5e-d738-957676fc899d.htm" />
+  <HelpKINode Title="DataReader.Dispose method" Url="html/e9ec78ba-8387-db0c-5614-28199d9fcee4.htm" />
+  <HelpKINode Title="DataReader.DisposeAsync method" Url="html/3dc2c491-7a06-6952-4c78-f5f7d3fdfa58.htm" />
+  <HelpKINode Title="DataReader.NextResult method" Url="html/9ff5f201-976c-1573-ce5f-007cfd08a0e5.htm" />
+  <HelpKINode Title="DataReader.NextResultAsync method" Url="html/ed5f0170-1c2f-d586-a2be-7e86be009d4c.htm" />
+  <HelpKINode Title="DataReader.Read method" Url="html/57e1584d-cd63-66c0-da0c-1be584c8c3eb.htm" />
+  <HelpKINode Title="DataReader.ReadAsync method" Url="html/6180a0fc-6c18-8dd2-8246-1c77f7164449.htm" />
+  <HelpKINode Title="DataReader.Reset method" Url="html/50457cc0-a8da-7a1e-0975-70c5e40464bd.htm" />
+  <HelpKINode Title="DataReader.ResetAsync method" Url="html/3e09aa51-f348-9541-3773-9ca1172dd211.htm" />
+  <HelpKINode Title="DataRecord class">
+    <HelpKINode Title="DataRecord Class" Url="html/5a2eb72b-485e-c03e-d4eb-e27e734d03da.htm" />
+    <HelpKINode Title="constructor" Url="html/7dea2af3-41eb-5657-566b-80e4ba6338ce.htm" />
+    <HelpKINode Title="fields" Url="html/3d0c5cb3-bc5e-fb26-901a-5c413428a39f.htm" />
+    <HelpKINode Title="methods" Url="html/cc94d6a1-a80d-b662-4d56-3db2c78af9e7.htm" />
+    <HelpKINode Title="properties" Url="html/19993b30-c298-1bee-2d4d-95b157ea1d27.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataRecord.DataRecord constructor" Url="html/7dea2af3-41eb-5657-566b-80e4ba6338ce.htm" />
+  <HelpKINode Title="DataRecord.Empty field" Url="html/0f72cd47-2881-ea6b-3b31-df829177a9e2.htm" />
+  <HelpKINode Title="DataRecord.From method" Url="html/421476d1-3043-0150-48e5-6e0fcf65e276.htm" />
+  <HelpKINode Title="DataRecord.GetBoolean method" Url="html/4ecf4f0d-600a-e7ac-ff2b-af22aabcda70.htm" />
+  <HelpKINode Title="DataRecord.GetByte method" Url="html/c0e5dee7-0689-9ff2-10d5-f7a737b10231.htm" />
+  <HelpKINode Title="DataRecord.GetBytes method" Url="html/7c7740b3-a1a9-6640-aa78-cdf186ad318d.htm" />
+  <HelpKINode Title="DataRecord.GetChar method" Url="html/1866fd32-a81f-b425-1fec-9c3ea429629d.htm" />
+  <HelpKINode Title="DataRecord.GetData method" Url="html/d52d0cad-05e8-ea4e-6a06-f62a34f081d9.htm" />
+  <HelpKINode Title="DataRecord.GetDateTime method" Url="html/018c9f33-8557-43f0-f003-be6d75cee42c.htm" />
+  <HelpKINode Title="DataRecord.GetDecimal method" Url="html/8e6b990a-d2f0-9f77-a7cd-342af39672a6.htm" />
+  <HelpKINode Title="DataRecord.GetDouble method" Url="html/92fbd321-2797-0b56-76e7-6f8ec27e1db3.htm" />
+  <HelpKINode Title="DataRecord.GetEnumerator method" Url="html/fad2b245-d6bd-c2ba-ae66-d16dead3d6b8.htm" />
+  <HelpKINode Title="DataRecord.GetFieldType method" Url="html/8f29362a-6a52-c6f1-03ab-fd5c7aa74d36.htm" />
+  <HelpKINode Title="DataRecord.GetFloat method" Url="html/c233ac78-e27d-afd8-587d-2636f7dd5b96.htm" />
+  <HelpKINode Title="DataRecord.GetGuid method" Url="html/be1f4717-3048-8b46-8081-93c278ce105f.htm" />
+  <HelpKINode Title="DataRecord.GetInt16 method" Url="html/df2560ed-8adf-31f9-80f4-865688e8e7e0.htm" />
+  <HelpKINode Title="DataRecord.GetInt32 method" Url="html/9df232de-c6a7-3bbb-7af9-f84ef68e8a63.htm" />
+  <HelpKINode Title="DataRecord.GetInt64 method" Url="html/984c0c49-f8f2-f46a-a9be-80e579657e5f.htm" />
+  <HelpKINode Title="DataRecord.GetString method" Url="html/9958bb55-4f2b-6498-e39a-14cd07b0e5da.htm" />
+  <HelpKINode Title="DataRecord.GetValue method" Url="html/3cd3ef68-72ca-0622-7e77-72d74627c21a.htm" />
+  <HelpKINode Title="DataRecord.Item property" Url="html/6ab0e2c8-4871-319d-4496-8619c068b3e4.htm" />
+  <HelpKINode Title="DataRecord.PropertyCount property" Url="html/678891f1-8414-3910-6155-f9b9e0971faf.htm" />
+  <HelpKINode Title="DataRecord.PropertyNames property" Url="html/70c4d73d-c185-7b6a-b3f1-e31b2d8c309f.htm" />
+  <HelpKINode Title="DataRecordExtensions class">
+    <HelpKINode Title="DataRecordExtensions Class" Url="html/02e403c1-f49f-2b23-a0a7-c7fc5c168041.htm" />
+    <HelpKINode Title="methods" Url="html/3af5e556-d0b2-785c-82c1-a3d5f6833798.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataRecordExtensions.GetBoolean method" Url="html/468c9572-d401-4952-f89b-104b6091edb1.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetByte method" Url="html/6f04bbbb-7e8a-9138-2ea0-b4b7c45fa70f.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetBytes method" Url="html/bd91bfcc-5106-50f3-bf49-2178f23734e6.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetChar method" Url="html/237bac98-d0dd-4e56-fac2-6532ee202bfe.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetData method" Url="html/05025f79-b34a-32e3-7f9d-29a5b25d13fd.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetDateTime method" Url="html/5743c0d2-5c47-ad43-2c3c-8e1647e63fa6.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetDecimal method" Url="html/d9022783-66bc-5795-3bbc-ce405ae21d45.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetDouble method" Url="html/9a4cefa6-5bdd-2ae0-4bd4-3646d4aa65e1.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetFieldType method" Url="html/07b6e8dd-1821-d3c9-f49a-ec9b5feeb8dc.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetFloat method" Url="html/5be4519f-0d6b-bc9b-ace3-899f24ab5620.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetGuid method" Url="html/da4f8617-9f83-17ba-62dc-43af7ecbf096.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetInt16 method" Url="html/f4f64fb9-d061-4de7-5b2a-d7ac1131fbc4.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetInt32 method" Url="html/21aaa8db-cff8-7781-238a-03d9326abf14.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetInt64 method" Url="html/70561437-0d7a-fe87-f622-cc2dd4eb0b1f.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetName method" Url="html/a938a9c1-5887-4d66-361e-6c67378edbd6.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetOrdinal method" Url="html/3f8c7e05-12d4-a699-08f2-5443588b3ef9.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetString method" Url="html/0ac60bcf-7eae-2634-ec47-a2336bb00965.htm" />
+  <HelpKINode Title="DataRecordExtensions.GetValue method" Url="html/9064591a-d6ae-9191-3482-1047068e2a19.htm" />
+  <HelpKINode Title="Date property">
+    <HelpKINode Title="DefaultMessageBuilder.Date Property " Url="html/aaf67ed5-ebb5-5826-7b66-97005c9883cf.htm" />
+    <HelpKINode Title="IMessageBuilder.Date Property " Url="html/17a2b21a-a8a0-0824-a5dc-2776cec5202d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultMailClient class">
+    <HelpKINode Title="DefaultMailClient Class" Url="html/16648538-0d19-07b3-57db-aa7a328a75de.htm" />
+    <HelpKINode Title="constructor" Url="html/8fe58044-5021-102a-9833-0b0917507965.htm" />
+    <HelpKINode Title="events" Url="html/07c60f7f-d8d4-5473-860c-a33ba5a02c3f.htm" />
+    <HelpKINode Title="methods" Url="html/2202837b-9f27-24a7-cfdd-1d7e6cb6a063.htm" />
+    <HelpKINode Title="properties" Url="html/14df4f5e-23ff-1768-c895-cdc9e94aa40c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultMailClient.Authenticate method" Url="html/c7934445-2809-afc3-e2a9-0d276ec1316f.htm" />
+  <HelpKINode Title="DefaultMailClient.AuthenticateAsync method" Url="html/31f58f02-e569-43e2-fb5f-3a5c9515a21a.htm" />
+  <HelpKINode Title="DefaultMailClient.AuthenticateAsyncImpl method" Url="html/929e61f8-c855-3e1f-55e0-fe473ab1b008.htm" />
+  <HelpKINode Title="DefaultMailClient.BeforeMessageSent event" Url="html/05653581-751b-c981-457f-9c747b1b9022.htm" />
+  <HelpKINode Title="DefaultMailClient.BulkSend method" Url="html/fb978345-8a9c-ea54-a718-ee36621545c4.htm" />
+  <HelpKINode Title="DefaultMailClient.BulkSendAsync method" Url="html/5869e8ed-7035-6a2e-da9c-998aea67e8ea.htm" />
+  <HelpKINode Title="DefaultMailClient.BulkSendAsyncImpl method" Url="html/f449b2a4-11e4-a12d-09d3-57e31bc6adab.htm" />
+  <HelpKINode Title="DefaultMailClient.BulkSendImpl method" Url="html/8dcdc45f-6964-1c33-7cab-a41e68c58a29.htm" />
+  <HelpKINode Title="DefaultMailClient.DefaultMailClient constructor" Url="html/8fe58044-5021-102a-9833-0b0917507965.htm" />
+  <HelpKINode Title="DefaultMailClient.Dispose method" Url="html/bcc1dfbc-31ed-eb3a-3045-1c3aae4a9cfe.htm" />
+  <HelpKINode Title="DefaultMailClient.DisposeAsync method" Url="html/b629fc92-e416-f341-e0be-9b5fcdd24e71.htm" />
+  <HelpKINode Title="DefaultMailClient.Finalize method" Url="html/e308c40e-5cd0-60b6-240c-77632ea9c005.htm" />
+  <HelpKINode Title="DefaultMailClient.FormatAddresses method" Url="html/2a9c3f76-4b06-43e9-0bbf-0a96f8ad043f.htm" />
+  <HelpKINode Title="DefaultMailClient.FormatMessage method" Url="html/daef3743-bd75-79c6-e936-118585b193fa.htm" />
+  <HelpKINode Title="DefaultMailClient.MessageMutationError event" Url="html/7e424e99-71bb-fbaf-9840-064593af9774.htm" />
+  <HelpKINode Title="DefaultMailClient.MessageProcessed event" Url="html/a5b28e78-898d-37ec-3cf2-9da4f2f3dff4.htm" />
+  <HelpKINode Title="DefaultMailClient.MessageSent event" Url="html/46bcc358-4b23-f86a-a221-f16503d29f8c.htm" />
+  <HelpKINode Title="DefaultMailClient.MessageTransferError event" Url="html/95c380c9-9956-9a96-3f25-805c786fdab2.htm" />
+  <HelpKINode Title="DefaultMailClient.MessageTransferProgress event" Url="html/a58ea3d3-a4af-5f04-2379-e4fc17c9b3a0.htm" />
+  <HelpKINode Title="DefaultMailClient.Protocol property" Url="html/9ebec76e-71d6-538a-a801-1e76c9eed61d.htm" />
+  <HelpKINode Title="DefaultMailClient.Send method" Url="html/231c390a-ff47-50d8-8d34-db89b83ba1c1.htm" />
+  <HelpKINode Title="DefaultMailClient.SendAsync method" Url="html/cb84b0ec-eb3c-edb3-8118-58fb458467b9.htm" />
+  <HelpKINode Title="DefaultMailClient.SendAsyncImpl method" Url="html/a7fecfe0-c6cd-b78a-18a5-dabe0e5edf59.htm" />
+  <HelpKINode Title="DefaultMailClient.SendImpl method" Url="html/1d51b313-131b-7f0c-61e7-4abb6e692ba6.htm" />
+  <HelpKINode Title="DefaultMessageBuilder class">
+    <HelpKINode Title="DefaultMessageBuilder Class" Url="html/2803e6f7-0352-a569-c20a-7eeeaf7de9ab.htm" />
+    <HelpKINode Title="constructor" Url="html/522fd402-bddc-1cc2-8345-c47a48ebdee2.htm" />
+    <HelpKINode Title="methods" Url="html/d513eecd-b4ee-0ce4-dc95-87a83a5838da.htm" />
+    <HelpKINode Title="properties" Url="html/15a949d6-b590-c8a6-00f4-6e426b9eb695.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultMessageBuilder.Attachments property" Url="html/907f6bb1-c063-c518-9dc1-808ef8818937.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Bcc property" Url="html/3967ac84-9379-bb7e-0280-31a269ee16de.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Cc property" Url="html/91adcc64-648f-f764-8023-08d6575c36a0.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Clone method" Url="html/abc700f6-6290-62e5-6720-e708a0b75aad.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Date property" Url="html/aaf67ed5-ebb5-5826-7b66-97005c9883cf.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.DefaultMessageBuilder constructor" Url="html/522fd402-bddc-1cc2-8345-c47a48ebdee2.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.From property" Url="html/2982577a-ea74-667c-f905-69ceb12beff0.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Headers property" Url="html/55681af4-faef-26b6-fb32-5e27783abd3a.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.HtmlBody property" Url="html/475161cc-675e-276b-5990-1a67261c08d3.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Importance property" Url="html/c1bb806e-982f-0d2a-1154-911bcbdda015.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.InReplyTo property" Url="html/b92557f3-72d2-87a8-45ca-4322dda1f35e.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.LinkedResources property" Url="html/e78c6641-209d-839b-453e-ce3bf2b3c67e.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.MessageId property" Url="html/cf825553-8ccf-d4f9-f5a0-bc5c3892d17b.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.MimeVersion property" Url="html/a2af9350-2740-15a2-3758-308150a8f5d9.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Priority property" Url="html/a3fd0de6-9060-4f21-750d-809af5b112df.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.References property" Url="html/06a01e86-5c74-443e-5985-99179355ed7d.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ReplyTo property" Url="html/fcb66384-dcc0-4b31-e107-3b4887b08ebf.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentBcc property" Url="html/fb92e668-8cc1-1e30-6e77-9211cc0aad9f.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentCc property" Url="html/21284e6b-22a9-f3b8-d732-935bee902b1b.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentDate property" Url="html/0521b48f-0528-b3c4-d998-7ce6a73ec082.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentFrom property" Url="html/95f54636-5829-ef79-464a-ba6610091652.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentMessageId property" Url="html/b3bf2672-892e-cfeb-6f5e-1bd0d28af320.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentReplyTo property" Url="html/ff3639d1-55c3-15df-d74a-a084a8f6c11d.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentSender property" Url="html/941d290d-9a05-c14c-ac33-efa2e90b2a48.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ResentTo property" Url="html/abb86896-8b47-7f40-574d-1fd05bf5f062.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Sender property" Url="html/159f2541-6f7f-aa22-0021-9bd5b31161d5.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.Subject property" Url="html/0acc9a7d-4ad8-c5f2-ce73-de2fcc7f2da6.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.TextBody property" Url="html/0e8358e9-bac3-a580-62db-86c0777ee299.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.To property" Url="html/5fe1829c-96cf-cd45-e78a-9ce91e3aa4a2.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.ToMessage method" Url="html/363e25ee-6484-1bb1-c04b-96883b957b63.htm" />
+  <HelpKINode Title="DefaultMessageBuilder.XPriority property" Url="html/c47d570a-362d-5050-c3ff-edaa678caf6f.htm" />
+  <HelpKINode Title="DefaultPluginManager class">
+    <HelpKINode Title="DefaultPluginManager Class" Url="html/b507e1c0-8e3c-1975-a41e-ea11729c324e.htm" />
+    <HelpKINode Title="constructor" Url="html/7cbd05e9-5d0f-dbad-277a-414ec1c4d789.htm" />
+    <HelpKINode Title="methods" Url="html/1d1aa147-75ab-0633-06f4-93390ecb045b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultPluginManager.DefaultPluginManager constructor" Url="html/7cbd05e9-5d0f-dbad-277a-414ec1c4d789.htm" />
+  <HelpKINode Title="DefaultPluginManager.Load method" Url="html/5a157023-d271-018d-9c49-358853b01039.htm" />
+  <HelpKINode Title="DefaultSettingsProvider class">
+    <HelpKINode Title="DefaultSettingsProvider Class" Url="html/855dc161-76f4-b5ba-34d6-20b61b4137a4.htm" />
+    <HelpKINode Title="constructor" Url="html/74f6c002-55c3-6dce-8ad7-c10ccbae35c3.htm" />
+    <HelpKINode Title="methods" Url="html/c6678a3a-f9fe-7b63-8ce2-d74a5198fa8b.htm" />
+    <HelpKINode Title="properties" Url="html/25e5f39d-69b4-516b-3533-5e15e487b287.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultSettingsProvider.DefaultSettingsProvider constructor" Url="html/74f6c002-55c3-6dce-8ad7-c10ccbae35c3.htm" />
+  <HelpKINode Title="DefaultSettingsProvider.Get method" Url="html/6f60017b-c763-d79c-8c12-4ec98a075e73.htm" />
+  <HelpKINode Title="DefaultSettingsProvider.Register method" Url="html/d6dab71b-f29c-8ef9-001c-911864036abc.htm" />
+  <HelpKINode Title="DefaultSettingsProvider.RegisterAppSettings method" Url="html/dd7f112a-7d14-9e21-4eff-b3c88e58fc83.htm" />
+  <HelpKINode Title="DefaultSettingsProvider.Restore method" Url="html/58a16c0c-4848-9a4b-3e56-1e53b94bd17a.htm" />
+  <HelpKINode Title="DefaultSettingsProvider.Settings property" Url="html/841c9470-d8d1-0534-ea25-a35798511c07.htm" />
+  <HelpKINode Title="DefaultSettingsProvider.Store method" Url="html/176630c0-c71c-d2d8-4868-93c3c68c49e7.htm" />
+  <HelpKINode Title="DefaultStringFormatter class">
+    <HelpKINode Title="DefaultStringFormatter Class" Url="html/8c90e5a7-6ad6-7aee-9991-4218aa70ef04.htm" />
+    <HelpKINode Title="constructor" Url="html/c26424bd-d70a-ccf3-f764-05e4b0bd0608.htm" />
+    <HelpKINode Title="methods" Url="html/84672b61-e53b-974f-5549-5fa7844138cd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultStringFormatter.DefaultStringFormatter constructor" Url="html/c26424bd-d70a-ccf3-f764-05e4b0bd0608.htm" />
+  <HelpKINode Title="DefaultStringFormatter.Format method" Url="html/1a2818ec-12cc-1d01-2ea4-1fc4f9374a0a.htm" />
+  <HelpKINode Title="DisplayName property">
+    <HelpKINode Title="ISettings.DisplayName Property " Url="html/bd4e655c-3585-3632-a104-d639162fe395.htm" />
+    <HelpKINode Title="Settings.DisplayName Property " Url="html/90fa6c21-3439-de6d-5823-3981becc515e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="DataReader.Dispose Method " Url="html/e9ec78ba-8387-db0c-5614-28199d9fcee4.htm" />
+    <HelpKINode Title="DefaultMailClient.Dispose Method " Url="html/bcc1dfbc-31ed-eb3a-3045-1c3aae4a9cfe.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DisposeAsync method">
+    <HelpKINode Title="DataReader.DisposeAsync Method " Url="html/3dc2c491-7a06-6952-4c78-f5f7d3fdfa58.htm" />
+    <HelpKINode Title="DefaultMailClient.DisposeAsync Method " Url="html/b629fc92-e416-f341-e0be-9b5fcdd24e71.htm" />
+    <HelpKINode Title="SinglelineDSVReader.DisposeAsync Method " Url="html/f84d3b74-1bed-cb52-8812-6a5a2b21ca83.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DSVReaderSettings class">
+    <HelpKINode Title="DSVReaderSettings Class" Url="html/53768fb5-0db1-425a-34d0-89215389ce1c.htm" />
+    <HelpKINode Title="constructor" Url="html/59447b59-68e9-7a09-1fdb-5735610337e6.htm" />
+    <HelpKINode Title="methods" Url="html/d6482983-882d-d74c-fef5-3b6de405570c.htm" />
+    <HelpKINode Title="properties" Url="html/1f2eaced-ec24-59c9-33bf-020d3427ccba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DSVReaderSettings.DSVReaderSettings constructor" Url="html/59447b59-68e9-7a09-1fdb-5735610337e6.htm" />
+  <HelpKINode Title="DSVReaderSettings.Filename property" Url="html/bb1c6586-fcb1-c7c6-a7c0-625ec12b245d.htm" />
+  <HelpKINode Title="DSVReaderSettings.Separators property" Url="html/0c7e51a5-80dc-6ef3-29a9-09d84c00f30b.htm" />
+  <HelpKINode Title="DSVReaderSettings.TrimEntries property" Url="html/cf4e3779-cd8a-f17b-46bd-f0e5e3f8ddb7.htm" />
+  <HelpKINode Title="Empty field" Url="html/0f72cd47-2881-ea6b-3b31-df829177a9e2.htm" />
+  <HelpKINode Title="Exception property">
+    <HelpKINode Title="MessageMutationErrorEventArgs.Exception Property " Url="html/a0d1bf14-cef4-c183-d134-c35a30e4cdeb.htm" />
+    <HelpKINode Title="MessageTransferErrorEventArgs.Exception Property " Url="html/48cc9081-2922-9dad-3983-00e8b0c85a4d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Filename property" Url="html/bb1c6586-fcb1-c7c6-a7c0-625ec12b245d.htm" />
+  <HelpKINode Title="Finalize method" Url="html/e308c40e-5cd0-60b6-240c-77632ea9c005.htm" />
+  <HelpKINode Title="Format method">
+    <HelpKINode Title="DefaultStringFormatter.Format Method " Url="html/1a2818ec-12cc-1d01-2ea4-1fc4f9374a0a.htm" />
+    <HelpKINode Title="IStringFormatter.Format Method " Url="html/4da117b5-7ffa-a112-ba60-aaf73ed8c8dd.htm" />
+    <HelpKINode Title="StringFormatter.Format Method " Url="html/8c6efc10-d410-7fca-8e5c-db6406a63665.htm" />
+    <HelpKINode Title="StringFormatterExtensions.Format Method " Url="html/da0c5a22-0a12-600d-657b-04b7efe9dd76.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FormatAddresses method" Url="html/2a9c3f76-4b06-43e9-0bbf-0a96f8ad043f.htm" />
+  <HelpKINode Title="FormatMessage method" Url="html/daef3743-bd75-79c6-e936-118585b193fa.htm" />
+  <HelpKINode Title="From method" Url="html/421476d1-3043-0150-48e5-6e0fcf65e276.htm" />
+  <HelpKINode Title="From property">
+    <HelpKINode Title="DefaultMessageBuilder.From Property " Url="html/2982577a-ea74-667c-f905-69ceb12beff0.htm" />
+    <HelpKINode Title="IMessageBuilder.From Property " Url="html/8455c6f2-0d98-095f-9d14-baecb013bf91.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Get method">
+    <HelpKINode Title="DefaultSettingsProvider.Get Method " Url="html/6f60017b-c763-d79c-8c12-4ec98a075e73.htm" />
+    <HelpKINode Title="ISettingsProvider.Get Method " Url="html/111a7c98-45b2-3227-8eab-78d53df89d88.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Get(Of TSettings) method" Url="html/19e28a05-17dc-144a-15b1-052616352637.htm" />
+  <HelpKINode Title="Get&lt;TSettings&gt; method" Url="html/19e28a05-17dc-144a-15b1-052616352637.htm" />
+  <HelpKINode Title="GetBoolean method">
+    <HelpKINode Title="DataRecord.GetBoolean Method " Url="html/4ecf4f0d-600a-e7ac-ff2b-af22aabcda70.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetBoolean Method " Url="html/468c9572-d401-4952-f89b-104b6091edb1.htm" />
+    <HelpKINode Title="IDataRecord.GetBoolean Method " Url="html/ab2bc17d-7ecc-f17c-3b1d-84c2c5a65175.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetByte method">
+    <HelpKINode Title="DataRecord.GetByte Method " Url="html/c0e5dee7-0689-9ff2-10d5-f7a737b10231.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetByte Method " Url="html/6f04bbbb-7e8a-9138-2ea0-b4b7c45fa70f.htm" />
+    <HelpKINode Title="IDataRecord.GetByte Method " Url="html/6c956177-0e2c-979f-a7b2-9f4f26e3edd1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetBytes method">
+    <HelpKINode Title="DataRecord.GetBytes Method " Url="html/7c7740b3-a1a9-6640-aa78-cdf186ad318d.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetBytes Method " Url="html/bd91bfcc-5106-50f3-bf49-2178f23734e6.htm" />
+    <HelpKINode Title="IDataRecord.GetBytes Method " Url="html/d02a3c3b-e8e0-f067-5597-6e03ebbd1c84.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetChar method">
+    <HelpKINode Title="DataRecord.GetChar Method " Url="html/1866fd32-a81f-b425-1fec-9c3ea429629d.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetChar Method " Url="html/237bac98-d0dd-4e56-fac2-6532ee202bfe.htm" />
+    <HelpKINode Title="IDataRecord.GetChar Method " Url="html/bf2134b1-d57e-b726-d32d-23ea7eb7e6a5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetData method">
+    <HelpKINode Title="DataRecord.GetData Method " Url="html/d52d0cad-05e8-ea4e-6a06-f62a34f081d9.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetData Method " Url="html/05025f79-b34a-32e3-7f9d-29a5b25d13fd.htm" />
+    <HelpKINode Title="IDataRecord.GetData Method " Url="html/2f17662e-012b-60c7-a61c-0025b45f683b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetDateTime method">
+    <HelpKINode Title="DataRecord.GetDateTime Method " Url="html/018c9f33-8557-43f0-f003-be6d75cee42c.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetDateTime Method " Url="html/5743c0d2-5c47-ad43-2c3c-8e1647e63fa6.htm" />
+    <HelpKINode Title="IDataRecord.GetDateTime Method " Url="html/9061cc56-c497-9a64-70c3-a870a4b1ccc6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetDecimal method">
+    <HelpKINode Title="DataRecord.GetDecimal Method " Url="html/8e6b990a-d2f0-9f77-a7cd-342af39672a6.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetDecimal Method " Url="html/d9022783-66bc-5795-3bbc-ce405ae21d45.htm" />
+    <HelpKINode Title="IDataRecord.GetDecimal Method " Url="html/597473cc-c676-e0ef-d504-133ff17e26cb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetDisplayName method">
+    <HelpKINode Title="ISettings.GetDisplayName Method " Url="html/4f572e65-8373-559b-ffd2-4aa0a7b164ce.htm" />
+    <HelpKINode Title="Settings.GetDisplayName Method " Url="html/ee5cc381-325c-3484-68c5-bef79d301218.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetDouble method">
+    <HelpKINode Title="DataRecord.GetDouble Method " Url="html/92fbd321-2797-0b56-76e7-6f8ec27e1db3.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetDouble Method " Url="html/9a4cefa6-5bdd-2ae0-4bd4-3646d4aa65e1.htm" />
+    <HelpKINode Title="IDataRecord.GetDouble Method " Url="html/9964abe0-7f14-3b55-391c-64ab143217fc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetEnumerator method">
+    <HelpKINode Title="DataRecord.GetEnumerator Method " Url="html/fad2b245-d6bd-c2ba-ae66-d16dead3d6b8.htm" />
+    <HelpKINode Title="Settings.GetEnumerator Method " Url="html/d7db7897-5750-17c2-005f-f1d7de9f2e14.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetFieldType method">
+    <HelpKINode Title="DataRecord.GetFieldType Method " Url="html/8f29362a-6a52-c6f1-03ab-fd5c7aa74d36.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetFieldType Method " Url="html/07b6e8dd-1821-d3c9-f49a-ec9b5feeb8dc.htm" />
+    <HelpKINode Title="IDataRecord.GetFieldType Method " Url="html/dbc099ba-467b-5067-a6a3-05aeb2efa8f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetFloat method">
+    <HelpKINode Title="DataRecord.GetFloat Method " Url="html/c233ac78-e27d-afd8-587d-2636f7dd5b96.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetFloat Method " Url="html/5be4519f-0d6b-bc9b-ace3-899f24ab5620.htm" />
+    <HelpKINode Title="IDataRecord.GetFloat Method " Url="html/9f5faba2-34c4-910b-c21f-9bb006ffb34b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetGuid method">
+    <HelpKINode Title="DataRecord.GetGuid Method " Url="html/be1f4717-3048-8b46-8081-93c278ce105f.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetGuid Method " Url="html/da4f8617-9f83-17ba-62dc-43af7ecbf096.htm" />
+    <HelpKINode Title="IDataRecord.GetGuid Method " Url="html/4ab59229-7bcc-201e-6258-82593e7267b2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetInt16 method">
+    <HelpKINode Title="DataRecord.GetInt16 Method " Url="html/df2560ed-8adf-31f9-80f4-865688e8e7e0.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetInt16 Method " Url="html/f4f64fb9-d061-4de7-5b2a-d7ac1131fbc4.htm" />
+    <HelpKINode Title="IDataRecord.GetInt16 Method " Url="html/8d3abca0-ee96-7911-f81d-ea1f821a27b7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetInt32 method">
+    <HelpKINode Title="DataRecord.GetInt32 Method " Url="html/9df232de-c6a7-3bbb-7af9-f84ef68e8a63.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetInt32 Method " Url="html/21aaa8db-cff8-7781-238a-03d9326abf14.htm" />
+    <HelpKINode Title="IDataRecord.GetInt32 Method " Url="html/004b517d-0b45-ddb8-a4de-c762c9cc5bad.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetInt64 method">
+    <HelpKINode Title="DataRecord.GetInt64 Method " Url="html/984c0c49-f8f2-f46a-a9be-80e579657e5f.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetInt64 Method " Url="html/70561437-0d7a-fe87-f622-cc2dd4eb0b1f.htm" />
+    <HelpKINode Title="IDataRecord.GetInt64 Method " Url="html/d7daba0e-1453-19ef-c585-d6925ea2c2bd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetName method" Url="html/a938a9c1-5887-4d66-361e-6c67378edbd6.htm" />
+  <HelpKINode Title="GetOrdinal method" Url="html/3f8c7e05-12d4-a699-08f2-5443588b3ef9.htm" />
+  <HelpKINode Title="GetString method">
+    <HelpKINode Title="DataRecord.GetString Method " Url="html/9958bb55-4f2b-6498-e39a-14cd07b0e5da.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetString Method " Url="html/0ac60bcf-7eae-2634-ec47-a2336bb00965.htm" />
+    <HelpKINode Title="IDataRecord.GetString Method " Url="html/98547c40-8d9c-f34f-1436-4069f47c6ade.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetValue method">
+    <HelpKINode Title="DataRecord.GetValue Method " Url="html/3cd3ef68-72ca-0622-7e77-72d74627c21a.htm" />
+    <HelpKINode Title="DataRecordExtensions.GetValue Method " Url="html/9064591a-d6ae-9191-3482-1047068e2a19.htm" />
+    <HelpKINode Title="IDataRecord.GetValue Method " Url="html/f25b0ff4-b0f5-3042-cf58-f17b40212651.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Guid property">
+    <HelpKINode Title="ISettings.Guid Property " Url="html/a281e94b-e83c-197d-803c-09eecddef1bf.htm" />
+    <HelpKINode Title="Settings.Guid Property " Url="html/d04c9913-d0ea-6072-261b-cba768a013ce.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Headers property">
+    <HelpKINode Title="DefaultMessageBuilder.Headers Property " Url="html/55681af4-faef-26b6-fb32-5e27783abd3a.htm" />
+    <HelpKINode Title="IMessageBuilder.Headers Property " Url="html/04f22272-12e6-81e3-de66-47d97927eddc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HtmlBody property">
+    <HelpKINode Title="DefaultMessageBuilder.HtmlBody Property " Url="html/475161cc-675e-276b-5990-1a67261c08d3.htm" />
+    <HelpKINode Title="IMessageBuilder.HtmlBody Property " Url="html/1d11d941-1a82-eedc-f3c5-2036bbe1fc50.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IControllableMessageEvent interface">
+    <HelpKINode Title="IControllableMessageEvent Interface" Url="html/4fb84f83-4cc5-7e91-a13b-945f4fd6dd44.htm" />
+    <HelpKINode Title="properties" Url="html/31ac03a1-f766-9966-5664-d9a7fc454b77.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IControllableMessageEvent.Skip property" Url="html/1a11c694-78d9-f1b8-130d-a6e5c03cbf75.htm" />
+  <HelpKINode Title="IControllableMessageEvent.Stop property" Url="html/2ef76032-24c3-7e1d-d4e3-c1c069b06370.htm" />
+  <HelpKINode Title="IDataReader interface">
+    <HelpKINode Title="IDataReader Interface" Url="html/6e9f46a4-957c-7e35-81bd-70a205d8467c.htm" />
+    <HelpKINode Title="methods" Url="html/3ef681a3-1319-85d0-4a91-fea3a9103329.htm" />
+    <HelpKINode Title="properties" Url="html/632f895c-35bf-d289-0e1f-acd12999e9b1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDataReader.Count property" Url="html/d8d65429-0f4d-71a0-b182-fed2a294eacf.htm" />
+  <HelpKINode Title="IDataReader.NextResult method" Url="html/c3956fbc-57ec-aefc-c6d4-1e80e542543b.htm" />
+  <HelpKINode Title="IDataReader.NextResultAsync method" Url="html/ebe9a022-13bf-683d-fcde-7c15cf909cb8.htm" />
+  <HelpKINode Title="IDataReader.Read method" Url="html/cc68efe8-fae4-0cdd-a12d-eda78dfcd3e4.htm" />
+  <HelpKINode Title="IDataReader.ReadAsync method" Url="html/9e886301-39dc-9c5d-b195-b79dbacc274f.htm" />
+  <HelpKINode Title="IDataReader.Reset method" Url="html/7b263a2e-5731-4458-14f0-ba9f7665a80e.htm" />
+  <HelpKINode Title="IDataReader.ResetAsync method" Url="html/2f381fff-a8e2-d2e6-f668-ed8172e7aa53.htm" />
+  <HelpKINode Title="IDataRecord interface">
+    <HelpKINode Title="IDataRecord Interface" Url="html/3b32cf73-b67a-015b-018d-6563924df156.htm" />
+    <HelpKINode Title="methods" Url="html/18199246-5ec6-1e82-9cd2-5e58bc61fc98.htm" />
+    <HelpKINode Title="properties" Url="html/e23dbe98-729d-4cda-e4fa-cc2c584f553b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDataRecord.GetBoolean method" Url="html/ab2bc17d-7ecc-f17c-3b1d-84c2c5a65175.htm" />
+  <HelpKINode Title="IDataRecord.GetByte method" Url="html/6c956177-0e2c-979f-a7b2-9f4f26e3edd1.htm" />
+  <HelpKINode Title="IDataRecord.GetBytes method" Url="html/d02a3c3b-e8e0-f067-5597-6e03ebbd1c84.htm" />
+  <HelpKINode Title="IDataRecord.GetChar method" Url="html/bf2134b1-d57e-b726-d32d-23ea7eb7e6a5.htm" />
+  <HelpKINode Title="IDataRecord.GetData method" Url="html/2f17662e-012b-60c7-a61c-0025b45f683b.htm" />
+  <HelpKINode Title="IDataRecord.GetDateTime method" Url="html/9061cc56-c497-9a64-70c3-a870a4b1ccc6.htm" />
+  <HelpKINode Title="IDataRecord.GetDecimal method" Url="html/597473cc-c676-e0ef-d504-133ff17e26cb.htm" />
+  <HelpKINode Title="IDataRecord.GetDouble method" Url="html/9964abe0-7f14-3b55-391c-64ab143217fc.htm" />
+  <HelpKINode Title="IDataRecord.GetFieldType method" Url="html/dbc099ba-467b-5067-a6a3-05aeb2efa8f0.htm" />
+  <HelpKINode Title="IDataRecord.GetFloat method" Url="html/9f5faba2-34c4-910b-c21f-9bb006ffb34b.htm" />
+  <HelpKINode Title="IDataRecord.GetGuid method" Url="html/4ab59229-7bcc-201e-6258-82593e7267b2.htm" />
+  <HelpKINode Title="IDataRecord.GetInt16 method" Url="html/8d3abca0-ee96-7911-f81d-ea1f821a27b7.htm" />
+  <HelpKINode Title="IDataRecord.GetInt32 method" Url="html/004b517d-0b45-ddb8-a4de-c762c9cc5bad.htm" />
+  <HelpKINode Title="IDataRecord.GetInt64 method" Url="html/d7daba0e-1453-19ef-c585-d6925ea2c2bd.htm" />
+  <HelpKINode Title="IDataRecord.GetString method" Url="html/98547c40-8d9c-f34f-1436-4069f47c6ade.htm" />
+  <HelpKINode Title="IDataRecord.GetValue method" Url="html/f25b0ff4-b0f5-3042-cf58-f17b40212651.htm" />
+  <HelpKINode Title="IDataRecord.Item property" Url="html/da110851-bcac-fd0c-0364-0b4ee058fc0b.htm" />
+  <HelpKINode Title="IDataRecord.PropertyCount property" Url="html/1db18bad-1064-889d-b648-667a92b4f1fa.htm" />
+  <HelpKINode Title="IDataRecord.PropertyNames property" Url="html/5669de25-f549-5af3-26c4-6f9436797106.htm" />
+  <HelpKINode Title="IMailClient interface">
+    <HelpKINode Title="IMailClient Interface" Url="html/5e06aac8-2071-50b4-5c65-1d6a4e2554b1.htm" />
+    <HelpKINode Title="events" Url="html/6ba382f6-51bc-4c98-b57b-909af43a38da.htm" />
+    <HelpKINode Title="methods" Url="html/0207da07-d29c-0290-7664-f3f47e98beee.htm" />
+    <HelpKINode Title="properties" Url="html/aadf7aae-6dfb-c556-72cf-1693a39291d4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMailClient.Authenticate method" Url="html/ff6033ea-10fd-eb26-4fa1-b92b3dd4bca7.htm" />
+  <HelpKINode Title="IMailClient.AuthenticateAsync method" Url="html/0a856665-98cf-0ec0-3a17-4e8bfd0c5595.htm" />
+  <HelpKINode Title="IMailClient.BeforeMessageSent event" Url="html/0bf44fdb-5cbb-4c1c-a9b8-c7609c65f03d.htm" />
+  <HelpKINode Title="IMailClient.BulkSend method" Url="html/8a637bf4-ea42-4f52-07f5-71d30b7cbf1e.htm" />
+  <HelpKINode Title="IMailClient.BulkSendAsync method" Url="html/fedc3ebd-c5b6-e892-42d9-a5ea094ca66b.htm" />
+  <HelpKINode Title="IMailClient.MessageMutationError event" Url="html/e8048b89-77dc-28e1-4f4b-b38ed57e90dd.htm" />
+  <HelpKINode Title="IMailClient.MessageProcessed event" Url="html/79a741aa-382e-4e48-6c95-fc01dbed2ce1.htm" />
+  <HelpKINode Title="IMailClient.MessageSent event" Url="html/2ed452e5-5bab-dff0-45f5-d7bd43dd2f34.htm" />
+  <HelpKINode Title="IMailClient.MessageTransferError event" Url="html/06a2569f-1f76-6cff-00b3-d7d7d934a2ff.htm" />
+  <HelpKINode Title="IMailClient.MessageTransferProgress event" Url="html/dd5ea59c-6be3-ea95-024a-7e8f416e666c.htm" />
+  <HelpKINode Title="IMailClient.Protocol property" Url="html/55caeb44-c646-c574-7554-804f9450ebf4.htm" />
+  <HelpKINode Title="IMailClient.Send method" Url="html/df13c0d2-bbb8-4bc6-6dfa-e116a9796800.htm" />
+  <HelpKINode Title="IMailClient.SendAsync method" Url="html/48db82e6-e6a4-da90-c9c0-3f996e4d03b3.htm" />
+  <HelpKINode Title="IMessageBuilder interface">
+    <HelpKINode Title="IMessageBuilder Interface" Url="html/b2d76ac3-9f73-f9ba-96d5-45eb557a5cf7.htm" />
+    <HelpKINode Title="methods" Url="html/e2da058f-4428-ec9a-347f-0abb603f3a6c.htm" />
+    <HelpKINode Title="properties" Url="html/02a85664-905b-151c-7791-983f9bf00c24.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMessageBuilder.Attachments property" Url="html/3b12223f-7644-c3cf-a9e4-4f4a518842da.htm" />
+  <HelpKINode Title="IMessageBuilder.Bcc property" Url="html/11a9457c-2f5d-4a63-ae6c-e71755f23bc3.htm" />
+  <HelpKINode Title="IMessageBuilder.Cc property" Url="html/fdffc41c-c3a7-26e5-c55f-3e70e889c6db.htm" />
+  <HelpKINode Title="IMessageBuilder.Clone method" Url="html/0578a5a9-06e1-6693-404c-4d54a27c5009.htm" />
+  <HelpKINode Title="IMessageBuilder.Date property" Url="html/17a2b21a-a8a0-0824-a5dc-2776cec5202d.htm" />
+  <HelpKINode Title="IMessageBuilder.From property" Url="html/8455c6f2-0d98-095f-9d14-baecb013bf91.htm" />
+  <HelpKINode Title="IMessageBuilder.Headers property" Url="html/04f22272-12e6-81e3-de66-47d97927eddc.htm" />
+  <HelpKINode Title="IMessageBuilder.HtmlBody property" Url="html/1d11d941-1a82-eedc-f3c5-2036bbe1fc50.htm" />
+  <HelpKINode Title="IMessageBuilder.Importance property" Url="html/f746ef38-00ce-e448-82e4-181491e5f9d0.htm" />
+  <HelpKINode Title="IMessageBuilder.InReplyTo property" Url="html/306c45ec-cff2-ab34-82ec-21fd52398446.htm" />
+  <HelpKINode Title="IMessageBuilder.LinkedResources property" Url="html/4e48e3d4-bebc-dfb6-3627-36dff1ab76db.htm" />
+  <HelpKINode Title="IMessageBuilder.MessageId property" Url="html/46a84456-e088-eaf6-cf98-fb8ec5a9369b.htm" />
+  <HelpKINode Title="IMessageBuilder.MimeVersion property" Url="html/19c4161f-66b3-78c8-e691-1b970616b4a8.htm" />
+  <HelpKINode Title="IMessageBuilder.Priority property" Url="html/ba993897-4b7b-f328-0f23-6e3db6210973.htm" />
+  <HelpKINode Title="IMessageBuilder.References property" Url="html/2641288a-cbfc-6e8c-a838-463b62d39c84.htm" />
+  <HelpKINode Title="IMessageBuilder.ReplyTo property" Url="html/68a7e14c-37ac-ee47-ac65-ebe264e7f5bf.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentBcc property" Url="html/2a479597-5b0f-7161-c28c-8a3d47a09a8f.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentCc property" Url="html/9c434a49-cacd-22b8-3843-13c2061a46ed.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentDate property" Url="html/b4fbcd00-7d6d-bfff-f298-00af4f024720.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentFrom property" Url="html/2dd4680c-5fe3-bfb2-ad0e-35fa1883d629.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentMessageId property" Url="html/040b18e7-4cdc-efcf-0179-fc2b2fb7b7d0.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentReplyTo property" Url="html/0746d94d-faca-a73a-8f60-7f9d3a6e3750.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentSender property" Url="html/423e9807-f2e0-da7f-d4f6-a65426c2794b.htm" />
+  <HelpKINode Title="IMessageBuilder.ResentTo property" Url="html/12c03fdf-8ef6-e06f-e8e9-389bd1916e3a.htm" />
+  <HelpKINode Title="IMessageBuilder.Sender property" Url="html/eb300325-4488-afac-0a3a-264d18184688.htm" />
+  <HelpKINode Title="IMessageBuilder.Subject property" Url="html/6aaaa47c-f8cc-db40-209d-c5ebc7b0cde0.htm" />
+  <HelpKINode Title="IMessageBuilder.TextBody property" Url="html/8492475f-1a16-41f2-fb30-357870a0d1bb.htm" />
+  <HelpKINode Title="IMessageBuilder.To property" Url="html/ac039684-cae6-21fb-4f20-63f27edeb77f.htm" />
+  <HelpKINode Title="IMessageBuilder.ToMessage method" Url="html/5f7c870c-f25d-145d-c99f-633ec6aaa85a.htm" />
+  <HelpKINode Title="IMessageBuilder.XPriority property" Url="html/a5f67395-7ba1-fb88-6792-46ec7101230b.htm" />
+  <HelpKINode Title="IMessageMutator interface">
+    <HelpKINode Title="IMessageMutator Interface" Url="html/27001554-9d3e-f454-af18-48107493dd42.htm" />
+    <HelpKINode Title="methods" Url="html/35aa8bc0-1ea5-7526-2e3c-db74c199e6e4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMessageMutator.Mutate method" Url="html/be195168-8eb7-8f95-a1fb-f7ba510fb6d6.htm" />
+  <HelpKINode Title="ImplementationFactory property" Url="html/f70ab1c7-1b74-0bf9-3d1d-4c2562f14802.htm" />
+  <HelpKINode Title="ImplementationInstance property" Url="html/335924bd-834f-2878-35c8-3415b3f787c6.htm" />
+  <HelpKINode Title="ImplementationType property" Url="html/78dbb019-30dc-45cb-1008-68feeec0acbc.htm" />
+  <HelpKINode Title="Importance property">
+    <HelpKINode Title="DefaultMessageBuilder.Importance Property " Url="html/c1bb806e-982f-0d2a-1154-911bcbdda015.htm" />
+    <HelpKINode Title="IMessageBuilder.Importance Property " Url="html/f746ef38-00ce-e448-82e4-181491e5f9d0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InReplyTo property">
+    <HelpKINode Title="DefaultMessageBuilder.InReplyTo Property " Url="html/b92557f3-72d2-87a8-45ca-4322dda1f35e.htm" />
+    <HelpKINode Title="IMessageBuilder.InReplyTo Property " Url="html/306c45ec-cff2-ab34-82ec-21fd52398446.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPluginManager interface">
+    <HelpKINode Title="IPluginManager Interface" Url="html/8b96b7e0-bd30-0abe-ba0d-713078089d83.htm" />
+    <HelpKINode Title="methods" Url="html/13105376-ab49-b4ec-d508-55ad1d8c9d12.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPluginManager.Load method" Url="html/42ca1dee-2e7c-3efe-2717-a96f2be98f96.htm" />
+  <HelpKINode Title="ISettings interface">
+    <HelpKINode Title="ISettings Interface" Url="html/94f2b9e7-c151-c0ba-d186-6135beaf3ac3.htm" />
+    <HelpKINode Title="methods" Url="html/8dccee12-8fd1-ca27-534e-7b96a4969116.htm" />
+    <HelpKINode Title="properties" Url="html/a2164707-8e36-40b8-af84-bb6fa40f24b5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISettings.DisplayName property" Url="html/bd4e655c-3585-3632-a104-d639162fe395.htm" />
+  <HelpKINode Title="ISettings.GetDisplayName method" Url="html/4f572e65-8373-559b-ffd2-4aa0a7b164ce.htm" />
+  <HelpKINode Title="ISettings.Guid property" Url="html/a281e94b-e83c-197d-803c-09eecddef1bf.htm" />
+  <HelpKINode Title="ISettingsProvider interface">
+    <HelpKINode Title="ISettingsProvider Interface" Url="html/d0932a3e-f11b-5769-2e09-d015b21c8bb8.htm" />
+    <HelpKINode Title="methods" Url="html/b232dc4c-b6fc-442c-41c7-ef700c1bdf74.htm" />
+    <HelpKINode Title="properties" Url="html/c880fa24-c4b0-220b-c733-6bb0640b0a46.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISettingsProvider.Get method" Url="html/111a7c98-45b2-3227-8eab-78d53df89d88.htm" />
+  <HelpKINode Title="ISettingsProvider.Register method" Url="html/06c51a51-a077-071a-9025-6cded72188c1.htm" />
+  <HelpKINode Title="ISettingsProvider.RegisterAppSettings method" Url="html/a27242e6-a1bb-e334-a8f5-5a484995f634.htm" />
+  <HelpKINode Title="ISettingsProvider.Restore method" Url="html/fb00fa0a-9df7-7d31-d297-9b43c429fae5.htm" />
+  <HelpKINode Title="ISettingsProvider.Settings property" Url="html/f1e8eb3c-cc80-153f-4b98-41d5735fb6e3.htm" />
+  <HelpKINode Title="ISettingsProvider.Store method" Url="html/e4186fc8-e857-15b7-907f-57de32d1499d.htm" />
+  <HelpKINode Title="IsReadOnly property" Url="html/f2ab237b-49b0-98a9-fd41-928258999b21.htm" />
+  <HelpKINode Title="IStringFormatter interface">
+    <HelpKINode Title="IStringFormatter Interface" Url="html/4d5269e7-089f-279d-ecfb-f4a07463113e.htm" />
+    <HelpKINode Title="methods" Url="html/360eb107-703f-d3b0-9d8e-4fbe242c47cc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IStringFormatter.Format method" Url="html/4da117b5-7ffa-a112-ba60-aaf73ed8c8dd.htm" />
+  <HelpKINode Title="Item property">
+    <HelpKINode Title="DataRecord.Item Property " Url="html/6ab0e2c8-4871-319d-4496-8619c068b3e4.htm" />
+    <HelpKINode Title="IDataRecord.Item Property " Url="html/da110851-bcac-fd0c-0364-0b4ee058fc0b.htm" />
+    <HelpKINode Title="Settings.Item Property " Url="html/75772328-d18a-1a62-6a8b-8b2841f25aca.htm" />
+    <HelpKINode Title="SinglelineDSVReader.Item Property " Url="html/959b86df-5226-dbec-e0d3-0f2086f3d311.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Keys property" Url="html/4935a7c0-9967-b27a-81c0-04fa7acb7066.htm" />
+  <HelpKINode Title="Lifetime property">
+    <HelpKINode Title="ServiceAttribute.Lifetime Property " Url="html/60311bc6-f807-d1fb-2842-059f58526696.htm" />
+    <HelpKINode Title="ServiceDescriptor.Lifetime Property " Url="html/63074c06-4e56-987f-9bbb-7dc5912eaf94.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LinkedResources property">
+    <HelpKINode Title="DefaultMessageBuilder.LinkedResources Property " Url="html/e78c6641-209d-839b-453e-ce3bf2b3c67e.htm" />
+    <HelpKINode Title="IMessageBuilder.LinkedResources Property " Url="html/4e48e3d4-bebc-dfb6-3627-36dff1ab76db.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Load method">
+    <HelpKINode Title="DefaultPluginManager.Load Method " Url="html/5a157023-d271-018d-9c49-358853b01039.htm" />
+    <HelpKINode Title="IPluginManager.Load Method " Url="html/42ca1dee-2e7c-3efe-2717-a96f2be98f96.htm" />
+    <HelpKINode Title="PluginManagerExtensions.Load Method " Url="html/cc51ff9f-2359-4db1-29f2-3ab2192bda77.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MailClientExtensions class">
+    <HelpKINode Title="MailClientExtensions Class" Url="html/65b6ec2c-855e-93fe-7ecc-5ad553437422.htm" />
+    <HelpKINode Title="methods" Url="html/57364744-574f-43b7-47ff-fbe7c29c69bb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MailClientExtensions.Authenticate method" Url="html/bf5853d2-0254-f0df-8e64-bf852e597eb9.htm" />
+  <HelpKINode Title="MailClientExtensions.AuthenticateAsync method" Url="html/7d291856-0cff-50b4-657d-93a1227c802f.htm" />
+  <HelpKINode Title="MailClientExtensions.BulkSendAll method" Url="html/afda7fbe-b1cc-d2cd-3f4a-5431a4701611.htm" />
+  <HelpKINode Title="MailClientExtensions.BulkSendAllAsync method" Url="html/0c5abbd9-c16c-8b3a-fc56-04377c3c9d51.htm" />
+  <HelpKINode Title="Message property">
+    <HelpKINode Title="BeforeMessageSentEventArgs.Message Property " Url="html/f5890eb9-a829-7806-4007-e6568b5f4c2a.htm" />
+    <HelpKINode Title="MessageMutationErrorEventArgs.Message Property " Url="html/b2c8cc17-583f-4682-cfcd-7f3c153a4189.htm" />
+    <HelpKINode Title="MessageProcessedEventArgs.Message Property " Url="html/5d814f29-9f46-56c9-b285-85a2a56f7348.htm" />
+    <HelpKINode Title="MessageSentEventArgs.Message Property " Url="html/d176d44b-5e23-58ba-f0e7-0f68e8b1a591.htm" />
+    <HelpKINode Title="MessageTransferErrorEventArgs.Message Property " Url="html/42738e1a-0285-6468-6773-1aa8fdeb9bb1.htm" />
+    <HelpKINode Title="MessageTransferProgressEventArgs.Message Property " Url="html/7ba6eb5f-57dd-67f0-5645-ea77831cd0dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageEventArgsExtensions class">
+    <HelpKINode Title="MessageEventArgsExtensions Class" Url="html/0e0c3e51-2df8-08e9-e77c-94a2109b89f3.htm" />
+    <HelpKINode Title="methods" Url="html/5b76bc11-a018-bf32-9ad0-0db31babbadd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageEventArgsExtensions.Retry(Of TEventArgs) method" Url="html/796ca1f4-9479-fb5f-b159-643dcd82ef2b.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.Retry&lt;TEventArgs&gt; method" Url="html/796ca1f4-9479-fb5f-b159-643dcd82ef2b.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.RetryAfter(Of TEventArgs) method" Url="html/2024bd49-2f77-583d-c557-483d5d4aca10.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.RetryAfter&lt;TEventArgs&gt; method" Url="html/2024bd49-2f77-583d-c557-483d5d4aca10.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.RetryAfterAsync(Of TEventArgs) method" Url="html/cef451bc-ed1d-3550-4dd5-ff103cb0b2d9.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.RetryAfterAsync&lt;TEventArgs&gt; method" Url="html/cef451bc-ed1d-3550-4dd5-ff103cb0b2d9.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.Skip(Of TEventArgs) method" Url="html/1d09e84f-cbb9-b602-9238-a7fbe0a0a19f.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.Skip&lt;TEventArgs&gt; method" Url="html/1d09e84f-cbb9-b602-9238-a7fbe0a0a19f.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.SkipMutation(Of TEventArgs) method" Url="html/74fbe8c8-b9ab-56d1-00a2-01898f7fb09f.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.SkipMutation&lt;TEventArgs&gt; method" Url="html/74fbe8c8-b9ab-56d1-00a2-01898f7fb09f.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.Stop(Of TEventArgs) method" Url="html/761a9f16-201f-160b-9645-67523436cd50.htm" />
+  <HelpKINode Title="MessageEventArgsExtensions.Stop&lt;TEventArgs&gt; method" Url="html/761a9f16-201f-160b-9645-67523436cd50.htm" />
+  <HelpKINode Title="MessageId property">
+    <HelpKINode Title="DefaultMessageBuilder.MessageId Property " Url="html/cf825553-8ccf-d4f9-f5a0-bc5c3892d17b.htm" />
+    <HelpKINode Title="IMessageBuilder.MessageId Property " Url="html/46a84456-e088-eaf6-cf98-fb8ec5a9369b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageMutationError event">
+    <HelpKINode Title="DefaultMailClient.MessageMutationError Event" Url="html/7e424e99-71bb-fbaf-9840-064593af9774.htm" />
+    <HelpKINode Title="IMailClient.MessageMutationError Event" Url="html/e8048b89-77dc-28e1-4f4b-b38ed57e90dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageMutationErrorEventArgs class">
+    <HelpKINode Title="MessageMutationErrorEventArgs Class" Url="html/8d808c32-542b-bbad-129a-bc88907171dd.htm" />
+    <HelpKINode Title="constructor" Url="html/50c2f89b-5307-044e-fcaa-1642ca8b8a80.htm" />
+    <HelpKINode Title="methods" Url="html/20eca959-78a5-afb1-2ef5-1da1a1d6a031.htm" />
+    <HelpKINode Title="properties" Url="html/6a7d736a-d913-c52c-d14b-31031bde5450.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageMutationErrorEventArgs.Exception property" Url="html/a0d1bf14-cef4-c183-d134-c35a30e4cdeb.htm" />
+  <HelpKINode Title="MessageMutationErrorEventArgs.Message property" Url="html/b2c8cc17-583f-4682-cfcd-7f3c153a4189.htm" />
+  <HelpKINode Title="MessageMutationErrorEventArgs.MessageMutationErrorEventArgs constructor" Url="html/50c2f89b-5307-044e-fcaa-1642ca8b8a80.htm" />
+  <HelpKINode Title="MessageMutationErrorEventArgs.Mutator property" Url="html/d2845b15-b028-a9bf-803a-b4683df5e8bb.htm" />
+  <HelpKINode Title="MessageMutationErrorEventArgs.Skip property" Url="html/3c09e832-f1dd-e0bc-5620-28b4b784a272.htm" />
+  <HelpKINode Title="MessageMutationErrorEventArgs.SkipMutation property" Url="html/4f206481-6c4f-a913-8a74-c9c9e2a13e06.htm" />
+  <HelpKINode Title="MessageMutationErrorEventArgs.Stop property" Url="html/482a631d-387c-5a88-83aa-4415b262f6b5.htm" />
+  <HelpKINode Title="MessageProcessed event">
+    <HelpKINode Title="DefaultMailClient.MessageProcessed Event" Url="html/a5b28e78-898d-37ec-3cf2-9da4f2f3dff4.htm" />
+    <HelpKINode Title="IMailClient.MessageProcessed Event" Url="html/79a741aa-382e-4e48-6c95-fc01dbed2ce1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageProcessedEventArgs class">
+    <HelpKINode Title="MessageProcessedEventArgs Class" Url="html/52448da7-df66-ca58-0be8-ef901910d3e6.htm" />
+    <HelpKINode Title="constructor" Url="html/b17df508-ba11-3a04-4c7e-46e13950b0c4.htm" />
+    <HelpKINode Title="methods" Url="html/136fb524-bd40-66ae-8560-ce3bc522bcd3.htm" />
+    <HelpKINode Title="properties" Url="html/55c9b99e-9ca8-a619-3c4e-107856587b39.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageProcessedEventArgs.Count property" Url="html/fcb539a5-55ee-c4fc-3ecb-057248501a16.htm" />
+  <HelpKINode Title="MessageProcessedEventArgs.Message property" Url="html/5d814f29-9f46-56c9-b285-85a2a56f7348.htm" />
+  <HelpKINode Title="MessageProcessedEventArgs.MessageProcessedEventArgs constructor" Url="html/b17df508-ba11-3a04-4c7e-46e13950b0c4.htm" />
+  <HelpKINode Title="MessageProcessedEventArgs.Ordinal property" Url="html/cc0bf970-c253-d038-f165-94f5257ae65f.htm" />
+  <HelpKINode Title="MessageProcessedEventArgs.ProcessedType property" Url="html/5581162a-a30a-dbe2-df06-cb4630ca279b.htm" />
+  <HelpKINode Title="MessageSent event">
+    <HelpKINode Title="DefaultMailClient.MessageSent Event" Url="html/46bcc358-4b23-f86a-a221-f16503d29f8c.htm" />
+    <HelpKINode Title="IMailClient.MessageSent Event" Url="html/2ed452e5-5bab-dff0-45f5-d7bd43dd2f34.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageSentEventArgs class">
+    <HelpKINode Title="MessageSentEventArgs Class" Url="html/f0cf1930-cba1-25ba-b4ce-e4773d05f635.htm" />
+    <HelpKINode Title="constructor" Url="html/565fc7be-486e-9c8b-f1b2-a8e64b56079f.htm" />
+    <HelpKINode Title="methods" Url="html/c1787331-fce6-65cc-3007-c3bc7e8189d1.htm" />
+    <HelpKINode Title="properties" Url="html/c185a31e-2a46-f8cc-6bef-436111c39888.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageSentEventArgs.Message property" Url="html/d176d44b-5e23-58ba-f0e7-0f68e8b1a591.htm" />
+  <HelpKINode Title="MessageSentEventArgs.MessageSentEventArgs constructor" Url="html/565fc7be-486e-9c8b-f1b2-a8e64b56079f.htm" />
+  <HelpKINode Title="MessageTransferError event">
+    <HelpKINode Title="DefaultMailClient.MessageTransferError Event" Url="html/95c380c9-9956-9a96-3f25-805c786fdab2.htm" />
+    <HelpKINode Title="IMailClient.MessageTransferError Event" Url="html/06a2569f-1f76-6cff-00b3-d7d7d934a2ff.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageTransferErrorEventArgs class">
+    <HelpKINode Title="MessageTransferErrorEventArgs Class" Url="html/8baf2e5d-dc7b-82d4-9d5a-c926c4a3f0ea.htm" />
+    <HelpKINode Title="constructor" Url="html/f303af9d-d18a-cd6d-fbb4-80db11f251af.htm" />
+    <HelpKINode Title="methods" Url="html/ad408745-4525-dfbc-e5b1-d15e8b93fa25.htm" />
+    <HelpKINode Title="properties" Url="html/3a7636e7-bace-9f47-1f66-b265944c33ef.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageTransferErrorEventArgs.Attempt property" Url="html/507d63f3-ea51-b6d9-681d-31f3a2f4b130.htm" />
+  <HelpKINode Title="MessageTransferErrorEventArgs.Exception property" Url="html/48cc9081-2922-9dad-3983-00e8b0c85a4d.htm" />
+  <HelpKINode Title="MessageTransferErrorEventArgs.Message property" Url="html/42738e1a-0285-6468-6773-1aa8fdeb9bb1.htm" />
+  <HelpKINode Title="MessageTransferErrorEventArgs.MessageTransferErrorEventArgs constructor" Url="html/f303af9d-d18a-cd6d-fbb4-80db11f251af.htm" />
+  <HelpKINode Title="MessageTransferErrorEventArgs.Retry property" Url="html/2d3bbd27-5aa9-3ea8-65ba-8d4fd758e2fb.htm" />
+  <HelpKINode Title="MessageTransferErrorEventArgs.Skip property" Url="html/aa413294-8a1e-731e-5a61-ebeab535b57f.htm" />
+  <HelpKINode Title="MessageTransferErrorEventArgs.Stop property" Url="html/adb6f2a4-3f0f-48cc-8fb7-e397c86d5e7d.htm" />
+  <HelpKINode Title="MessageTransferProgress event">
+    <HelpKINode Title="DefaultMailClient.MessageTransferProgress Event" Url="html/a58ea3d3-a4af-5f04-2379-e4fc17c9b3a0.htm" />
+    <HelpKINode Title="IMailClient.MessageTransferProgress Event" Url="html/dd5ea59c-6be3-ea95-024a-7e8f416e666c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageTransferProgressEventArgs class">
+    <HelpKINode Title="MessageTransferProgressEventArgs Class" Url="html/c109aa36-d512-6efd-fbd1-7ebfb220204d.htm" />
+    <HelpKINode Title="constructor" Url="html/510200f6-1a07-5a1e-52b8-9e1503da51b0.htm" />
+    <HelpKINode Title="methods" Url="html/2798aca3-1156-ecd6-24c0-3ca001e1b2ba.htm" />
+    <HelpKINode Title="properties" Url="html/ce551170-9e27-4e7b-e3b6-2b6de722d6a6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageTransferProgressEventArgs.BytesTransferred property" Url="html/629531bd-8ee2-f1f9-ce64-f4a0261a55f7.htm" />
+  <HelpKINode Title="MessageTransferProgressEventArgs.Message property" Url="html/7ba6eb5f-57dd-67f0-5645-ea77831cd0dd.htm" />
+  <HelpKINode Title="MessageTransferProgressEventArgs.MessageTransferProgressEventArgs constructor" Url="html/510200f6-1a07-5a1e-52b8-9e1503da51b0.htm" />
+  <HelpKINode Title="MessageTransferProgressEventArgs.TotalSize property" Url="html/49b223d6-eec8-705b-4b12-9308d7601828.htm" />
+  <HelpKINode Title="MimeKitExtensions class">
+    <HelpKINode Title="MimeKitExtensions Class" Url="html/256476aa-8201-805d-2e0f-75cdfea39758.htm" />
+    <HelpKINode Title="methods" Url="html/3d84b0a5-5447-403a-c50b-933fbcd380d8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MimeKitExtensions.Add method" Url="html/798bb154-2760-e1ca-b64b-05e5da589fb7.htm" />
+  <HelpKINode Title="MimeKitExtensions.Clone method" Url="html/a8186722-fb46-f7a1-a956-5c5725536be4.htm" />
+  <HelpKINode Title="MimeVersion property">
+    <HelpKINode Title="DefaultMessageBuilder.MimeVersion Property " Url="html/a2af9350-2740-15a2-3758-308150a8f5d9.htm" />
+    <HelpKINode Title="IMessageBuilder.MimeVersion Property " Url="html/19c4161f-66b3-78c8-e691-1b970616b4a8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MonkeyTyper.Core.Data namespace" Url="html/c55c8239-4b9b-2a18-8687-19cdcfa27256.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Data.DataReader class" Url="html/e9408eaf-629b-f8e9-bafc-765cbfb75184.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Data.DataRecord class" Url="html/5a2eb72b-485e-c03e-d4eb-e27e734d03da.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Data.IDataReader interface" Url="html/6e9f46a4-957c-7e35-81bd-70a205d8467c.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Data.IDataRecord interface" Url="html/3b32cf73-b67a-015b-018d-6563924df156.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions namespace" Url="html/10e05909-e1e0-2a1d-dbe5-e1749356cca9.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.DataRecordExtensions class" Url="html/02e403c1-f49f-2b23-a0a7-c7fc5c168041.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.MailClientExtensions class" Url="html/65b6ec2c-855e-93fe-7ecc-5ad553437422.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.MessageEventArgsExtensions class" Url="html/0e0c3e51-2df8-08e9-e77c-94a2109b89f3.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.MimeKitExtensions class" Url="html/256476aa-8201-805d-2e0f-75cdfea39758.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.PluginManagerExtensions class" Url="html/0e550bb7-ec0d-9845-d1a9-887c25ecfae0.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.SettingsProviderExtensions class" Url="html/d61f885f-0b15-9e37-b553-f78c77c82def.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Extensions.StringFormatterExtensions class" Url="html/73db4666-351f-8597-26e2-ff7a32da038a.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Format namespace" Url="html/a2d4cc51-e309-f415-d814-8b3dfdb86754.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Format.DefaultStringFormatter class" Url="html/8c90e5a7-6ad6-7aee-9991-4218aa70ef04.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Format.IStringFormatter interface" Url="html/4d5269e7-089f-279d-ecfb-f4a07463113e.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Format.StringFormatter class" Url="html/46b94662-b463-2be3-c680-30b17fe22b9f.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail namespace" Url="html/030edea0-a00b-2503-b611-37a522163cd6.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.BeforeMessageSentEventArgs class" Url="html/ef09dbc3-8323-6b1f-1edf-d5c97956d630.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.DefaultMailClient class" Url="html/16648538-0d19-07b3-57db-aa7a328a75de.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.DefaultMessageBuilder class" Url="html/2803e6f7-0352-a569-c20a-7eeeaf7de9ab.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.IControllableMessageEvent interface" Url="html/4fb84f83-4cc5-7e91-a13b-945f4fd6dd44.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.IMailClient interface" Url="html/5e06aac8-2071-50b4-5c65-1d6a4e2554b1.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.IMessageBuilder interface" Url="html/b2d76ac3-9f73-f9ba-96d5-45eb557a5cf7.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.IMessageMutator interface" Url="html/27001554-9d3e-f454-af18-48107493dd42.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.MessageMutationErrorEventArgs class" Url="html/8d808c32-542b-bbad-129a-bc88907171dd.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.MessageProcessedEventArgs class" Url="html/52448da7-df66-ca58-0be8-ef901910d3e6.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.MessageSentEventArgs class" Url="html/f0cf1930-cba1-25ba-b4ce-e4773d05f635.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.MessageTransferErrorEventArgs class" Url="html/8baf2e5d-dc7b-82d4-9d5a-c926c4a3f0ea.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.MessageTransferProgressEventArgs class" Url="html/c109aa36-d512-6efd-fbd1-7ebfb220204d.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Mail.ProcessedType enumeration" Url="html/b852b7a6-0fe2-dbf4-cae2-cdf67e88150a.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins namespace" Url="html/f3b1f03d-4401-1ac3-0bb3-f6a545fdad2b.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.DefaultPluginManager class" Url="html/b507e1c0-8e3c-1975-a41e-ea11729c324e.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.DefaultSettingsProvider class" Url="html/855dc161-76f4-b5ba-34d6-20b61b4137a4.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.IPluginManager interface" Url="html/8b96b7e0-bd30-0abe-ba0d-713078089d83.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.ISettings interface" Url="html/94f2b9e7-c151-c0ba-d186-6135beaf3ac3.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.ISettingsProvider interface" Url="html/d0932a3e-f11b-5769-2e09-d015b21c8bb8.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.ServiceAttribute class" Url="html/f1b76706-c8a0-2903-026d-015aaf4e537c.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.ServiceDescriptor class" Url="html/bbfb3709-4ace-2c3c-6a16-5570756a7c6c.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.ServiceLifetime enumeration" Url="html/2ca4bee6-0a25-1b44-eb22-cf6b3a930d04.htm" />
+  <HelpKINode Title="MonkeyTyper.Core.Plugins.Settings class" Url="html/9c1948ae-bb81-4c48-9a9a-1461e198fdb6.htm" />
+  <HelpKINode Title="MonkeyTyper.Plugins.DataReaders.DSV namespace" Url="html/dc180a7f-8bfb-5a28-25e5-c65e2044fd6a.htm" />
+  <HelpKINode Title="MonkeyTyper.Plugins.DataReaders.DSV.DSVReaderSettings class" Url="html/53768fb5-0db1-425a-34d0-89215389ce1c.htm" />
+  <HelpKINode Title="MonkeyTyper.Plugins.DataReaders.DSV.SinglelineDSVReader class" Url="html/8227485f-b281-c748-8be5-5867041996f1.htm" />
+  <HelpKINode Title="Mutate method" Url="html/be195168-8eb7-8f95-a1fb-f7ba510fb6d6.htm" />
+  <HelpKINode Title="Mutator property" Url="html/d2845b15-b028-a9bf-803a-b4683df5e8bb.htm" />
+  <HelpKINode Title="NextResult method">
+    <HelpKINode Title="DataReader.NextResult Method " Url="html/9ff5f201-976c-1573-ce5f-007cfd08a0e5.htm" />
+    <HelpKINode Title="IDataReader.NextResult Method " Url="html/c3956fbc-57ec-aefc-c6d4-1e80e542543b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NextResultAsync method">
+    <HelpKINode Title="DataReader.NextResultAsync Method " Url="html/ed5f0170-1c2f-d586-a2be-7e86be009d4c.htm" />
+    <HelpKINode Title="IDataReader.NextResultAsync Method " Url="html/ebe9a022-13bf-683d-fcde-7c15cf909cb8.htm" />
+    <HelpKINode Title="SinglelineDSVReader.NextResultAsync Method " Url="html/a886e266-ed31-298d-ea69-b31584f401dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ordinal property" Url="html/cc0bf970-c253-d038-f165-94f5257ae65f.htm" />
+  <HelpKINode Title="PluginManagerExtensions class">
+    <HelpKINode Title="PluginManagerExtensions Class" Url="html/0e550bb7-ec0d-9845-d1a9-887c25ecfae0.htm" />
+    <HelpKINode Title="methods" Url="html/da76ed09-056f-abd7-9c84-2f9b79a8826a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PluginManagerExtensions.Load method" Url="html/cc51ff9f-2359-4db1-29f2-3ab2192bda77.htm" />
+  <HelpKINode Title="Priority property">
+    <HelpKINode Title="DefaultMessageBuilder.Priority Property " Url="html/a3fd0de6-9060-4f21-750d-809af5b112df.htm" />
+    <HelpKINode Title="IMessageBuilder.Priority Property " Url="html/ba993897-4b7b-f328-0f23-6e3db6210973.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProcessedType enumeration" Url="html/b852b7a6-0fe2-dbf4-cae2-cdf67e88150a.htm" />
+  <HelpKINode Title="ProcessedType property" Url="html/5581162a-a30a-dbe2-df06-cb4630ca279b.htm" />
+  <HelpKINode Title="PropertyCount property">
+    <HelpKINode Title="DataRecord.PropertyCount Property " Url="html/678891f1-8414-3910-6155-f9b9e0971faf.htm" />
+    <HelpKINode Title="IDataRecord.PropertyCount Property " Url="html/1db18bad-1064-889d-b648-667a92b4f1fa.htm" />
+    <HelpKINode Title="SinglelineDSVReader.PropertyCount Property " Url="html/24831b3f-9ee7-d1b7-bbc7-4032097a66a5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PropertyNames property">
+    <HelpKINode Title="DataRecord.PropertyNames Property " Url="html/70c4d73d-c185-7b6a-b3f1-e31b2d8c309f.htm" />
+    <HelpKINode Title="IDataRecord.PropertyNames Property " Url="html/5669de25-f549-5af3-26c4-6f9436797106.htm" />
+    <HelpKINode Title="SinglelineDSVReader.PropertyNames Property " Url="html/34bde874-5c59-0687-20b8-25e742e662c8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Protocol property">
+    <HelpKINode Title="DefaultMailClient.Protocol Property " Url="html/9ebec76e-71d6-538a-a801-1e76c9eed61d.htm" />
+    <HelpKINode Title="IMailClient.Protocol Property " Url="html/55caeb44-c646-c574-7554-804f9450ebf4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Read method">
+    <HelpKINode Title="DataReader.Read Method " Url="html/57e1584d-cd63-66c0-da0c-1be584c8c3eb.htm" />
+    <HelpKINode Title="IDataReader.Read Method " Url="html/cc68efe8-fae4-0cdd-a12d-eda78dfcd3e4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReadAsync method">
+    <HelpKINode Title="DataReader.ReadAsync Method " Url="html/6180a0fc-6c18-8dd2-8246-1c77f7164449.htm" />
+    <HelpKINode Title="IDataReader.ReadAsync Method " Url="html/9e886301-39dc-9c5d-b195-b79dbacc274f.htm" />
+    <HelpKINode Title="SinglelineDSVReader.ReadAsync Method " Url="html/a8814c53-97ff-c5ea-5115-69fcb0546a21.htm" />
+  </HelpKINode>
+  <HelpKINode Title="References property">
+    <HelpKINode Title="DefaultMessageBuilder.References Property " Url="html/06a01e86-5c74-443e-5985-99179355ed7d.htm" />
+    <HelpKINode Title="IMessageBuilder.References Property " Url="html/2641288a-cbfc-6e8c-a838-463b62d39c84.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Register method">
+    <HelpKINode Title="DefaultSettingsProvider.Register Method " Url="html/d6dab71b-f29c-8ef9-001c-911864036abc.htm" />
+    <HelpKINode Title="ISettingsProvider.Register Method " Url="html/06c51a51-a077-071a-9025-6cded72188c1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Register(Of TSettings) method" Url="html/45a3da4d-a2f5-7168-e81d-054f452b076b.htm" />
+  <HelpKINode Title="Register&lt;TSettings&gt; method" Url="html/45a3da4d-a2f5-7168-e81d-054f452b076b.htm" />
+  <HelpKINode Title="RegisterAppSettings method">
+    <HelpKINode Title="DefaultSettingsProvider.RegisterAppSettings Method " Url="html/dd7f112a-7d14-9e21-4eff-b3c88e58fc83.htm" />
+    <HelpKINode Title="ISettingsProvider.RegisterAppSettings Method " Url="html/a27242e6-a1bb-e334-a8f5-5a484995f634.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegisterAppSettings(Of TSettings) method" Url="html/8315fe0c-b503-7af6-19ae-744a3b07ad20.htm" />
+  <HelpKINode Title="RegisterAppSettings&lt;TSettings&gt; method" Url="html/8315fe0c-b503-7af6-19ae-744a3b07ad20.htm" />
+  <HelpKINode Title="Remove method" Url="html/a5fb6db6-f20a-66d0-3a2d-d170a4d1598e.htm" />
+  <HelpKINode Title="ReplyTo property">
+    <HelpKINode Title="DefaultMessageBuilder.ReplyTo Property " Url="html/fcb66384-dcc0-4b31-e107-3b4887b08ebf.htm" />
+    <HelpKINode Title="IMessageBuilder.ReplyTo Property " Url="html/68a7e14c-37ac-ee47-ac65-ebe264e7f5bf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentBcc property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentBcc Property " Url="html/fb92e668-8cc1-1e30-6e77-9211cc0aad9f.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentBcc Property " Url="html/2a479597-5b0f-7161-c28c-8a3d47a09a8f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentCc property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentCc Property " Url="html/21284e6b-22a9-f3b8-d732-935bee902b1b.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentCc Property " Url="html/9c434a49-cacd-22b8-3843-13c2061a46ed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentDate property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentDate Property " Url="html/0521b48f-0528-b3c4-d998-7ce6a73ec082.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentDate Property " Url="html/b4fbcd00-7d6d-bfff-f298-00af4f024720.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentFrom property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentFrom Property " Url="html/95f54636-5829-ef79-464a-ba6610091652.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentFrom Property " Url="html/2dd4680c-5fe3-bfb2-ad0e-35fa1883d629.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentMessageId property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentMessageId Property " Url="html/b3bf2672-892e-cfeb-6f5e-1bd0d28af320.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentMessageId Property " Url="html/040b18e7-4cdc-efcf-0179-fc2b2fb7b7d0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentReplyTo property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentReplyTo Property " Url="html/ff3639d1-55c3-15df-d74a-a084a8f6c11d.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentReplyTo Property " Url="html/0746d94d-faca-a73a-8f60-7f9d3a6e3750.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentSender property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentSender Property " Url="html/941d290d-9a05-c14c-ac33-efa2e90b2a48.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentSender Property " Url="html/423e9807-f2e0-da7f-d4f6-a65426c2794b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResentTo property">
+    <HelpKINode Title="DefaultMessageBuilder.ResentTo Property " Url="html/abb86896-8b47-7f40-574d-1fd05bf5f062.htm" />
+    <HelpKINode Title="IMessageBuilder.ResentTo Property " Url="html/12c03fdf-8ef6-e06f-e8e9-389bd1916e3a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Reset method">
+    <HelpKINode Title="DataReader.Reset Method " Url="html/50457cc0-a8da-7a1e-0975-70c5e40464bd.htm" />
+    <HelpKINode Title="IDataReader.Reset Method " Url="html/7b263a2e-5731-4458-14f0-ba9f7665a80e.htm" />
+    <HelpKINode Title="SinglelineDSVReader.Reset Method " Url="html/5202e006-8a28-2a43-d26d-db52849ef2a6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResetAsync method">
+    <HelpKINode Title="DataReader.ResetAsync Method " Url="html/3e09aa51-f348-9541-3773-9ca1172dd211.htm" />
+    <HelpKINode Title="IDataReader.ResetAsync Method " Url="html/2f381fff-a8e2-d2e6-f668-ed8172e7aa53.htm" />
+    <HelpKINode Title="SinglelineDSVReader.ResetAsync Method " Url="html/8e2722c9-e887-3a4c-9570-adceceae03a2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Restore method">
+    <HelpKINode Title="DefaultSettingsProvider.Restore Method " Url="html/58a16c0c-4848-9a4b-3e56-1e53b94bd17a.htm" />
+    <HelpKINode Title="ISettingsProvider.Restore Method " Url="html/fb00fa0a-9df7-7d31-d297-9b43c429fae5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Retry property" Url="html/2d3bbd27-5aa9-3ea8-65ba-8d4fd758e2fb.htm" />
+  <HelpKINode Title="Retry(Of TEventArgs) method" Url="html/796ca1f4-9479-fb5f-b159-643dcd82ef2b.htm" />
+  <HelpKINode Title="Retry&lt;TEventArgs&gt; method" Url="html/796ca1f4-9479-fb5f-b159-643dcd82ef2b.htm" />
+  <HelpKINode Title="RetryAfter(Of TEventArgs) method" Url="html/2024bd49-2f77-583d-c557-483d5d4aca10.htm" />
+  <HelpKINode Title="RetryAfter&lt;TEventArgs&gt; method" Url="html/2024bd49-2f77-583d-c557-483d5d4aca10.htm" />
+  <HelpKINode Title="RetryAfterAsync(Of TEventArgs) method" Url="html/cef451bc-ed1d-3550-4dd5-ff103cb0b2d9.htm" />
+  <HelpKINode Title="RetryAfterAsync&lt;TEventArgs&gt; method" Url="html/cef451bc-ed1d-3550-4dd5-ff103cb0b2d9.htm" />
+  <HelpKINode Title="Scoped enumeration member" Url="html/2ca4bee6-0a25-1b44-eb22-cf6b3a930d04.htm" />
+  <HelpKINode Title="Send method">
+    <HelpKINode Title="DefaultMailClient.Send Method " Url="html/231c390a-ff47-50d8-8d34-db89b83ba1c1.htm" />
+    <HelpKINode Title="IMailClient.Send Method " Url="html/df13c0d2-bbb8-4bc6-6dfa-e116a9796800.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendAsync method">
+    <HelpKINode Title="DefaultMailClient.SendAsync Method " Url="html/cb84b0ec-eb3c-edb3-8118-58fb458467b9.htm" />
+    <HelpKINode Title="IMailClient.SendAsync Method " Url="html/48db82e6-e6a4-da90-c9c0-3f996e4d03b3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendAsyncImpl method" Url="html/a7fecfe0-c6cd-b78a-18a5-dabe0e5edf59.htm" />
+  <HelpKINode Title="Sender property">
+    <HelpKINode Title="DefaultMessageBuilder.Sender Property " Url="html/159f2541-6f7f-aa22-0021-9bd5b31161d5.htm" />
+    <HelpKINode Title="IMessageBuilder.Sender Property " Url="html/eb300325-4488-afac-0a3a-264d18184688.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendImpl method" Url="html/1d51b313-131b-7f0c-61e7-4abb6e692ba6.htm" />
+  <HelpKINode Title="Sent enumeration member" Url="html/b852b7a6-0fe2-dbf4-cae2-cdf67e88150a.htm" />
+  <HelpKINode Title="Separators property" Url="html/0c7e51a5-80dc-6ef3-29a9-09d84c00f30b.htm" />
+  <HelpKINode Title="ServiceAttribute class">
+    <HelpKINode Title="ServiceAttribute Class" Url="html/f1b76706-c8a0-2903-026d-015aaf4e537c.htm" />
+    <HelpKINode Title="constructor" Url="html/0d0285fa-ce40-9f09-4bd9-ada7e7118641.htm" />
+    <HelpKINode Title="methods" Url="html/d678ee67-cd0c-2f28-1a5b-a2598fb8ecdc.htm" />
+    <HelpKINode Title="properties" Url="html/3b6cabe1-9b3d-a68c-4420-f0e277ec3c06.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceAttribute.Lifetime property" Url="html/60311bc6-f807-d1fb-2842-059f58526696.htm" />
+  <HelpKINode Title="ServiceAttribute.ServiceAttribute constructor" Url="html/0d0285fa-ce40-9f09-4bd9-ada7e7118641.htm" />
+  <HelpKINode Title="ServiceAttribute.ServiceType property" Url="html/82e2d922-3d9a-88fd-336a-9bd3bde1451a.htm" />
+  <HelpKINode Title="ServiceAttribute.SettingsType property" Url="html/cb8f0cac-9dca-af1f-47ba-8fd361adc6d6.htm" />
+  <HelpKINode Title="ServiceDescriptor class">
+    <HelpKINode Title="ServiceDescriptor Class" Url="html/bbfb3709-4ace-2c3c-6a16-5570756a7c6c.htm" />
+    <HelpKINode Title="constructor" Url="html/25906916-6286-edd8-75ae-a2eac159ba6e.htm" />
+    <HelpKINode Title="methods" Url="html/0ebb1c52-8f9b-3e72-0c0d-85e4835a96fd.htm" />
+    <HelpKINode Title="properties" Url="html/d62ea329-9128-83e7-fb01-c146fba1f01f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ServiceDescriptor.ImplementationFactory property" Url="html/f70ab1c7-1b74-0bf9-3d1d-4c2562f14802.htm" />
+  <HelpKINode Title="ServiceDescriptor.ImplementationInstance property" Url="html/335924bd-834f-2878-35c8-3415b3f787c6.htm" />
+  <HelpKINode Title="ServiceDescriptor.ImplementationType property" Url="html/78dbb019-30dc-45cb-1008-68feeec0acbc.htm" />
+  <HelpKINode Title="ServiceDescriptor.Lifetime property" Url="html/63074c06-4e56-987f-9bbb-7dc5912eaf94.htm" />
+  <HelpKINode Title="ServiceDescriptor.ServiceDescriptor constructor" Url="html/25906916-6286-edd8-75ae-a2eac159ba6e.htm" />
+  <HelpKINode Title="ServiceDescriptor.ServiceType property" Url="html/1ae7bb45-c1ef-c5d1-55c2-258366eabc12.htm" />
+  <HelpKINode Title="ServiceDescriptor.SettingsType property" Url="html/1ae3fe50-0301-1ec4-e296-552b90dc5895.htm" />
+  <HelpKINode Title="ServiceLifetime enumeration" Url="html/2ca4bee6-0a25-1b44-eb22-cf6b3a930d04.htm" />
+  <HelpKINode Title="ServiceType property">
+    <HelpKINode Title="ServiceAttribute.ServiceType Property " Url="html/82e2d922-3d9a-88fd-336a-9bd3bde1451a.htm" />
+    <HelpKINode Title="ServiceDescriptor.ServiceType Property " Url="html/1ae7bb45-c1ef-c5d1-55c2-258366eabc12.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings class">
+    <HelpKINode Title="Settings Class" Url="html/9c1948ae-bb81-4c48-9a9a-1461e198fdb6.htm" />
+    <HelpKINode Title="constructor" Url="html/cc358d69-4675-70f0-1de9-53e0022bb5f4.htm" />
+    <HelpKINode Title="methods" Url="html/418a693b-b221-3647-fb00-405f92a402d7.htm" />
+    <HelpKINode Title="properties" Url="html/76ded5c8-66cc-48a5-57ee-7d8a52e2aa51.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings property">
+    <HelpKINode Title="DefaultSettingsProvider.Settings Property " Url="html/841c9470-d8d1-0534-ea25-a35798511c07.htm" />
+    <HelpKINode Title="ISettingsProvider.Settings Property " Url="html/f1e8eb3c-cc80-153f-4b98-41d5735fb6e3.htm" />
+    <HelpKINode Title="SinglelineDSVReader.Settings Property " Url="html/cdf3b205-c72a-6216-f5b6-1dae76421681.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings.Add method" Url="html/96a237c5-8d2d-a154-22c3-11cf0c048ab0.htm" />
+  <HelpKINode Title="Settings.ContainsKey method" Url="html/736347ae-bdc6-0975-9d5d-049e9fb5db70.htm" />
+  <HelpKINode Title="Settings.Count property" Url="html/b90a8672-6bb9-a218-7b0b-29e533b10788.htm" />
+  <HelpKINode Title="Settings.DisplayName property" Url="html/90fa6c21-3439-de6d-5823-3981becc515e.htm" />
+  <HelpKINode Title="Settings.GetDisplayName method" Url="html/ee5cc381-325c-3484-68c5-bef79d301218.htm" />
+  <HelpKINode Title="Settings.GetEnumerator method" Url="html/d7db7897-5750-17c2-005f-f1d7de9f2e14.htm" />
+  <HelpKINode Title="Settings.Guid property" Url="html/d04c9913-d0ea-6072-261b-cba768a013ce.htm" />
+  <HelpKINode Title="Settings.IsReadOnly property" Url="html/f2ab237b-49b0-98a9-fd41-928258999b21.htm" />
+  <HelpKINode Title="Settings.Item property" Url="html/75772328-d18a-1a62-6a8b-8b2841f25aca.htm" />
+  <HelpKINode Title="Settings.Keys property" Url="html/4935a7c0-9967-b27a-81c0-04fa7acb7066.htm" />
+  <HelpKINode Title="Settings.Remove method" Url="html/a5fb6db6-f20a-66d0-3a2d-d170a4d1598e.htm" />
+  <HelpKINode Title="Settings.Settings constructor" Url="html/cc358d69-4675-70f0-1de9-53e0022bb5f4.htm" />
+  <HelpKINode Title="Settings.TryGetValue method" Url="html/076527d9-88df-fb7d-5bf0-f3e3d9a69536.htm" />
+  <HelpKINode Title="Settings.Values property" Url="html/70ec0569-ce89-52b9-fa99-a2c7782e7d8a.htm" />
+  <HelpKINode Title="SettingsProviderExtensions class">
+    <HelpKINode Title="SettingsProviderExtensions Class" Url="html/d61f885f-0b15-9e37-b553-f78c77c82def.htm" />
+    <HelpKINode Title="methods" Url="html/399abac9-16ac-bdd6-7e86-88f39fc797fa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SettingsProviderExtensions.Get(Of TSettings) method" Url="html/19e28a05-17dc-144a-15b1-052616352637.htm" />
+  <HelpKINode Title="SettingsProviderExtensions.Get&lt;TSettings&gt; method" Url="html/19e28a05-17dc-144a-15b1-052616352637.htm" />
+  <HelpKINode Title="SettingsProviderExtensions.Register(Of TSettings) method" Url="html/45a3da4d-a2f5-7168-e81d-054f452b076b.htm" />
+  <HelpKINode Title="SettingsProviderExtensions.Register&lt;TSettings&gt; method" Url="html/45a3da4d-a2f5-7168-e81d-054f452b076b.htm" />
+  <HelpKINode Title="SettingsProviderExtensions.RegisterAppSettings(Of TSettings) method" Url="html/8315fe0c-b503-7af6-19ae-744a3b07ad20.htm" />
+  <HelpKINode Title="SettingsProviderExtensions.RegisterAppSettings&lt;TSettings&gt; method" Url="html/8315fe0c-b503-7af6-19ae-744a3b07ad20.htm" />
+  <HelpKINode Title="SettingsType property">
+    <HelpKINode Title="ServiceAttribute.SettingsType Property " Url="html/cb8f0cac-9dca-af1f-47ba-8fd361adc6d6.htm" />
+    <HelpKINode Title="ServiceDescriptor.SettingsType Property " Url="html/1ae3fe50-0301-1ec4-e296-552b90dc5895.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SinglelineDSVReader class">
+    <HelpKINode Title="SinglelineDSVReader Class" Url="html/8227485f-b281-c748-8be5-5867041996f1.htm" />
+    <HelpKINode Title="constructor" Url="html/bdc15e46-8ce4-7572-1165-e62b2a2bf61e.htm" />
+    <HelpKINode Title="methods" Url="html/5e6868b2-855b-0258-24ef-87e8af345007.htm" />
+    <HelpKINode Title="properties" Url="html/984819d7-b4ae-b09c-5353-e6659c0960ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SinglelineDSVReader.Count property" Url="html/7c160b70-0b6e-3a66-bca7-9b7399422cc1.htm" />
+  <HelpKINode Title="SinglelineDSVReader.DisposeAsync method" Url="html/f84d3b74-1bed-cb52-8812-6a5a2b21ca83.htm" />
+  <HelpKINode Title="SinglelineDSVReader.Item property" Url="html/959b86df-5226-dbec-e0d3-0f2086f3d311.htm" />
+  <HelpKINode Title="SinglelineDSVReader.NextResultAsync method" Url="html/a886e266-ed31-298d-ea69-b31584f401dd.htm" />
+  <HelpKINode Title="SinglelineDSVReader.PropertyCount property" Url="html/24831b3f-9ee7-d1b7-bbc7-4032097a66a5.htm" />
+  <HelpKINode Title="SinglelineDSVReader.PropertyNames property" Url="html/34bde874-5c59-0687-20b8-25e742e662c8.htm" />
+  <HelpKINode Title="SinglelineDSVReader.ReadAsync method" Url="html/a8814c53-97ff-c5ea-5115-69fcb0546a21.htm" />
+  <HelpKINode Title="SinglelineDSVReader.Reset method" Url="html/5202e006-8a28-2a43-d26d-db52849ef2a6.htm" />
+  <HelpKINode Title="SinglelineDSVReader.ResetAsync method" Url="html/8e2722c9-e887-3a4c-9570-adceceae03a2.htm" />
+  <HelpKINode Title="SinglelineDSVReader.Settings property" Url="html/cdf3b205-c72a-6216-f5b6-1dae76421681.htm" />
+  <HelpKINode Title="SinglelineDSVReader.SinglelineDSVReader constructor" Url="html/bdc15e46-8ce4-7572-1165-e62b2a2bf61e.htm" />
+  <HelpKINode Title="Singleton enumeration member" Url="html/2ca4bee6-0a25-1b44-eb22-cf6b3a930d04.htm" />
+  <HelpKINode Title="Skip property">
+    <HelpKINode Title="BeforeMessageSentEventArgs.Skip Property " Url="html/9ebc9cdd-92f6-f548-7dab-a9c5e316b1c6.htm" />
+    <HelpKINode Title="IControllableMessageEvent.Skip Property " Url="html/1a11c694-78d9-f1b8-130d-a6e5c03cbf75.htm" />
+    <HelpKINode Title="MessageMutationErrorEventArgs.Skip Property " Url="html/3c09e832-f1dd-e0bc-5620-28b4b784a272.htm" />
+    <HelpKINode Title="MessageTransferErrorEventArgs.Skip Property " Url="html/aa413294-8a1e-731e-5a61-ebeab535b57f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Skip(Of TEventArgs) method" Url="html/1d09e84f-cbb9-b602-9238-a7fbe0a0a19f.htm" />
+  <HelpKINode Title="Skip&lt;TEventArgs&gt; method" Url="html/1d09e84f-cbb9-b602-9238-a7fbe0a0a19f.htm" />
+  <HelpKINode Title="SkipMutation property" Url="html/4f206481-6c4f-a913-8a74-c9c9e2a13e06.htm" />
+  <HelpKINode Title="SkipMutation(Of TEventArgs) method" Url="html/74fbe8c8-b9ab-56d1-00a2-01898f7fb09f.htm" />
+  <HelpKINode Title="SkipMutation&lt;TEventArgs&gt; method" Url="html/74fbe8c8-b9ab-56d1-00a2-01898f7fb09f.htm" />
+  <HelpKINode Title="Skipped enumeration member" Url="html/b852b7a6-0fe2-dbf4-cae2-cdf67e88150a.htm" />
+  <HelpKINode Title="Stop property">
+    <HelpKINode Title="BeforeMessageSentEventArgs.Stop Property " Url="html/abc82f79-ddf8-f23f-1dbb-8c407a62db73.htm" />
+    <HelpKINode Title="IControllableMessageEvent.Stop Property " Url="html/2ef76032-24c3-7e1d-d4e3-c1c069b06370.htm" />
+    <HelpKINode Title="MessageMutationErrorEventArgs.Stop Property " Url="html/482a631d-387c-5a88-83aa-4415b262f6b5.htm" />
+    <HelpKINode Title="MessageTransferErrorEventArgs.Stop Property " Url="html/adb6f2a4-3f0f-48cc-8fb7-e397c86d5e7d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stop(Of TEventArgs) method" Url="html/761a9f16-201f-160b-9645-67523436cd50.htm" />
+  <HelpKINode Title="Stop&lt;TEventArgs&gt; method" Url="html/761a9f16-201f-160b-9645-67523436cd50.htm" />
+  <HelpKINode Title="Store method">
+    <HelpKINode Title="DefaultSettingsProvider.Store Method " Url="html/176630c0-c71c-d2d8-4868-93c3c68c49e7.htm" />
+    <HelpKINode Title="ISettingsProvider.Store Method " Url="html/e4186fc8-e857-15b7-907f-57de32d1499d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StringFormatter class">
+    <HelpKINode Title="StringFormatter Class" Url="html/46b94662-b463-2be3-c680-30b17fe22b9f.htm" />
+    <HelpKINode Title="constructor" Url="html/4d9028d3-d70d-2a35-f82d-61a4791f7a95.htm" />
+    <HelpKINode Title="methods" Url="html/b6d92a3c-1831-78ab-3ac9-f6690633bae7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StringFormatter.Format method" Url="html/8c6efc10-d410-7fca-8e5c-db6406a63665.htm" />
+  <HelpKINode Title="StringFormatter.StringFormatter constructor" Url="html/4d9028d3-d70d-2a35-f82d-61a4791f7a95.htm" />
+  <HelpKINode Title="StringFormatterExtensions class">
+    <HelpKINode Title="StringFormatterExtensions Class" Url="html/73db4666-351f-8597-26e2-ff7a32da038a.htm" />
+    <HelpKINode Title="methods" Url="html/1fdb4fe5-4630-956e-728b-8edf496c4f00.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StringFormatterExtensions.Format method" Url="html/da0c5a22-0a12-600d-657b-04b7efe9dd76.htm" />
+  <HelpKINode Title="Subject property">
+    <HelpKINode Title="DefaultMessageBuilder.Subject Property " Url="html/0acc9a7d-4ad8-c5f2-ce73-de2fcc7f2da6.htm" />
+    <HelpKINode Title="IMessageBuilder.Subject Property " Url="html/6aaaa47c-f8cc-db40-209d-c5ebc7b0cde0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TextBody property">
+    <HelpKINode Title="DefaultMessageBuilder.TextBody Property " Url="html/0e8358e9-bac3-a580-62db-86c0777ee299.htm" />
+    <HelpKINode Title="IMessageBuilder.TextBody Property " Url="html/8492475f-1a16-41f2-fb30-357870a0d1bb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="To property">
+    <HelpKINode Title="DefaultMessageBuilder.To Property " Url="html/5fe1829c-96cf-cd45-e78a-9ce91e3aa4a2.htm" />
+    <HelpKINode Title="IMessageBuilder.To Property " Url="html/ac039684-cae6-21fb-4f20-63f27edeb77f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToMessage method">
+    <HelpKINode Title="DefaultMessageBuilder.ToMessage Method " Url="html/363e25ee-6484-1bb1-c04b-96883b957b63.htm" />
+    <HelpKINode Title="IMessageBuilder.ToMessage Method " Url="html/5f7c870c-f25d-145d-c99f-633ec6aaa85a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TotalSize property" Url="html/49b223d6-eec8-705b-4b12-9308d7601828.htm" />
+  <HelpKINode Title="Transient enumeration member" Url="html/2ca4bee6-0a25-1b44-eb22-cf6b3a930d04.htm" />
+  <HelpKINode Title="TrimEntries property" Url="html/cf4e3779-cd8a-f17b-46bd-f0e5e3f8ddb7.htm" />
+  <HelpKINode Title="TryGetValue method" Url="html/076527d9-88df-fb7d-5bf0-f3e3d9a69536.htm" />
+  <HelpKINode Title="Values property" Url="html/70ec0569-ce89-52b9-fa99-a2c7782e7d8a.htm" />
+  <HelpKINode Title="Welcome" Url="html/5ed225ea-fa02-4a43-a702-e4eff07936ad.htm" />
+  <HelpKINode Title="XPriority property">
+    <HelpKINode Title="DefaultMessageBuilder.XPriority Property " Url="html/c47d570a-362d-5050-c3ff-edaa678caf6f.htm" />
+    <HelpKINode Title="IMessageBuilder.XPriority Property " Url="html/a5f67395-7ba1-fb88-6792-46ec7101230b.htm" />
+  </HelpKINode>
+</HelpKI>

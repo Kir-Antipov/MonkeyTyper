@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="5ed225ea-fa02-4a43-a702-e4eff07936ad" visible="True" isDefault="true" isSelected="true" title="Welcome to the MonkeyTyper">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Welcome" />
+    </HelpKeywords>
+  </Topic>
+</Topics>
