@@ -36,7 +36,8 @@
             // 
             // logoPicture
             // 
-            this.logoPicture.Image = global::MonkeyTyper.WinForms.Properties.Resources.icon;
+            this.logoPicture.BackgroundImage = global::MonkeyTyper.WinForms.Properties.Resources.icon;
+            this.logoPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logoPicture.Location = new System.Drawing.Point(13, 13);
             this.logoPicture.Name = "logoPicture";
             this.logoPicture.Size = new System.Drawing.Size(256, 256);
