@@ -7,7 +7,7 @@
 
 MonkeyTyper is an extensible application that was created for sending bulk emails.
 
-## 📦 Available Packages:
+## 📦 Available Packages
 
 | Description  | Package |
 | ------------- | ------------- |
